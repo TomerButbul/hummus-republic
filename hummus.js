@@ -68,8 +68,6 @@
     var brand = '<a class="brand" href="index.html" aria-label="Hummus Republic — home">' +
       '<span class="brand__mark">' + MARK + '</span>' +
       '<span class="wordmark">Hummus<sup>®</sup><br>Republic</span></a>';
-    var tick = '<span>Fresh meets fast ✦ Build your own ✦ Protein-forward Mediterranean ✦ $10 protein bowls all summer ✦ Generous by nature ✦</span>';
-    var topbar = '<div class="topbar"><div class="ticker">' + tick + tick + '</div></div>';
     var header = '<header class="nav"><div class="nav__inner">' + brand +
       '<nav class="nav__links" aria-label="Main">' + navItems.map(navlink).join('') + '</nav>' +
       '<div class="nav__cta"><a class="btn btn--sm" href="' + K.order + '" target="_blank" rel="noopener">Order Now ' + ARR + '</a></div>' +
@@ -82,7 +80,7 @@
     var menuEl = '<div class="menu" id="menu"><button class="menu__close" type="button">Close ✕</button>' + mlinks +
       '<a href="' + K.order + '" target="_blank" rel="noopener"><span>Order</span><small>06</small></a>' +
       '<div class="menu__foot"><span>Modern Mediterranean</span><span>@hummusrepublic</span></div></div>';
-    document.body.insertAdjacentHTML('afterbegin', topbar + header + menuEl);
+    document.body.insertAdjacentHTML('afterbegin', header + menuEl);
 
     /* ---- footer ---- */
     var IG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.4"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>';
@@ -183,12 +181,8 @@
     var hosts = document.querySelectorAll('[data-reviews]');
     if (!hosts.length || !window.HR) return;
     hosts.forEach(function (host) {
-      var list = HR.reviews.slice();
-      var half = Math.ceil(list.length / 2);
-      var a = list.slice(0, half), b = list.slice(half);
-      var rowA = a.concat(b).map(reviewCard).join('');
-      var rowB = b.concat(a).reverse().map(reviewCard).join('');
-      setHTML(host, '<div class="revrow">' + rowA + rowA + '</div><div class="revrow revrow--2">' + rowB + rowB + '</div>');
+      var row = HR.reviews.map(reviewCard).join('');
+      setHTML(host, '<div class="revrow">' + row + row + '</div>');
     });
   })();
 

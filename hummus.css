@@ -58,7 +58,7 @@
   --serif:'Fraunces','Georgia',serif;            /* editorial accent */
 
   /* Metrics */
-  --topbar-h:38px;
+  --topbar-h:0px;   /* announcement bar removed */
   --nav-h:74px;
   --wrap:1320px;
   --gut:clamp(1.25rem,5vw,4.5rem);
@@ -799,7 +799,7 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
    Mobile tuning
    ============================================================ */
 @media (max-width:600px){
-  :root{--section:clamp(2.9rem,9vw,4rem);--gut:1.25rem;--nav-h:62px;--topbar-h:34px}
+  :root{--section:clamp(2.9rem,9vw,4rem);--gut:1.25rem;--nav-h:62px;--topbar-h:0px}
   .section--tight{padding-block:clamp(2.3rem,7vw,3rem)}
   .h-hero{font-size:clamp(2.9rem,14vw,4.4rem);line-height:.9}
   .h-1{font-size:clamp(2.1rem,9vw,3rem);line-height:.94}
