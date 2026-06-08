@@ -116,6 +116,7 @@
      0. Cinematic intro loader (first load only, session-gated)
      ============================================================ */
   (function intro() {
+    return; // intro curtain removed — lighter, friendlier, loads straight to content
     if (!document.body.hasAttribute('data-intro')) return;
     var seen = false;
     try { seen = sessionStorage.getItem('hr-intro') === '1'; } catch (e) {}
@@ -431,7 +432,7 @@
   /* ============================================================
      Magnetic buttons + 3D tilt (desktop fine pointer)
      ============================================================ */
-  if (fine) {
+  if (false) { /* magnetic buttons + 3D tilt disabled — friendlier, less "techy" */
     document.querySelectorAll('.btn').forEach(function (btn) {
       var strength = 0.28, rect = null;
       var reset = function () { btn.style.transform = ''; };
@@ -491,7 +492,7 @@
   /* ============================================================
      Refined custom cursor (fine pointers)
      ============================================================ */
-  if (fine && !document.body.hasAttribute('data-no-cursor')) {
+  if (false) { /* custom cursor disabled — friendlier, less "techy" */
     var dot = el('div', 'cursor-dot'), ring = el('div', 'cursor-ring');
     document.body.appendChild(ring); document.body.appendChild(dot); document.body.classList.add('cursor-on');
     var dx = 0, dy = 0, rx = 0, ry = 0, tx = -100, ty = -100, started = false;
