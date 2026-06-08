@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Menu | Hummus Republic — Bowls, Pitas, Wraps & More</title>
+<meta name="description" content="Explore the Hummus Republic menu — build-your-own bowls, signature bowls, sandwiches, sides & specials, drinks and a kid's menu. Fresh, protein-forward Mediterranean.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C392F'/%3E%3Cg fill='none' stroke='%23F6CA75' stroke-width='1.5'%3E%3Cellipse cx='16' cy='16' rx='7.5' ry='10.5'/%3E%3Cpath d='M16 5.5C10.5 11 10.5 21 16 26.5'/%3E%3Cpath d='M16 5.5C21.5 11 21.5 21 16 26.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hummus.css?v=2">
+</head>
+<body data-page="menu">
+
+<!-- ===== page header ===== -->
+<header class="phead phead--sand grain">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Menu</span>
+    <h1 class="h-hero reveal" style="--d:60ms">The Menu</h1>
+    <p class="lede reveal" style="--d:140ms">Build your own, or let our chefs do it. Either way it's fresh, fast, protein-forward and made to order. No prices here — tap through to order and customize.</p>
+    <div class="row reveal" style="--d:220ms;margin-top:1.6rem;gap:.8rem">
+      <a class="btn" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
+        <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+      <a class="btn btn--ghost" href="https://framerusercontent.com/assets/0tI3ojkkn01Qxqozpym8NtKagCo.pdf" target="_blank" rel="noopener">Nutrition &amp; Allergens</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== sticky category bar (filled by JS) ===== -->
+<div class="menubar"><div class="menubar__in" data-menubar></div></div>
+
+<!-- ===== menu categories (filled by JS) ===== -->
+<div data-menu></div>
+
+<!-- ===== build your own callout ===== -->
+<section class="section wrap">
+  <div class="byo grain" style="position:relative">
+    <div class="reveal">
+      <span class="eyebrow eyebrow--light"><span class="dots"></span> Your rules</span>
+      <h2 class="h-2" style="margin-top:.5rem">Build it exactly<br>how you like it</h2>
+      <p class="lede" style="margin-top:1rem;color:rgba(254,251,250,.84);max-width:46ch">Base, protein, hummus, toppings, sauce. Bowl, pita or wrap. Walk the line and call every shot.</p>
+      <div class="byo__opts">
+        <span class="claim claim--solid">Greens &amp; grains</span>
+        <span class="claim claim--solid">5 proteins</span>
+        <span class="claim claim--solid">3 hummus</span>
+        <span class="claim claim--solid">Unlimited toppings</span>
+      </div>
+      <a class="btn btn--gold" style="margin-top:1.8rem" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Start building
+        <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+    </div>
+    <div class="reveal" style="--d:120ms"><div class="media" style="aspect-ratio:4/3"><img src="images/toppings.jpg" alt="A fresh Mediterranean bowl"></div></div>
+  </div>
+</section>
+
+<!-- ===== reviews ===== -->
+<section class="section--tight band-sand reviews" style="overflow:hidden">
+  <div class="wrap" style="margin-bottom:2rem">
+    <span class="eyebrow reveal"><span class="dots"></span> The regulars agree</span>
+    <h2 class="h-2 reveal" style="--d:80ms;margin-top:.5rem">Loved coast to coast</h2>
+  </div>
+  <div data-reviews></div>
+</section>
+
+<script src="data.js?v=2"></script>
+<script src="hummus.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Locations | Find a Hummus Republic Near You</title>
+<meta name="description" content="Find your nearest Hummus Republic. Search the map by city or ZIP, see what's open and what's coming soon, and order ahead for pickup or delivery.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C392F'/%3E%3Cg fill='none' stroke='%23F6CA75' stroke-width='1.5'%3E%3Cellipse cx='16' cy='16' rx='7.5' ry='10.5'/%3E%3Cpath d='M16 5.5C10.5 11 10.5 21 16 26.5'/%3E%3Cpath d='M16 5.5C21.5 11 21.5 21 16 26.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="hummus.css?v=2">
+</head>
+<body data-page="locations">
+
+<!-- ===== compact header ===== -->
+<header class="phead phead--forest grain" style="padding-bottom:clamp(1.8rem,4vh,3rem)">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Locations</span>
+    <h1 class="h-1 reveal" style="--d:60ms">Find your<br>Republic</h1>
+    <p class="lede reveal" style="--d:140ms">50+ locations and counting. Search by city or ZIP, drop a pin, and order ahead.</p>
+  </div>
+</header>
+
+<!-- ===== map + list ===== -->
+<section class="locwrap">
+  <div class="locpanel">
+    <div class="locsearch">
+      <div class="locsearch__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="locsearch" type="search" placeholder="Search city, state or ZIP" aria-label="Search locations">
+      </div>
+      <div class="locsearch__meta">
+        <span class="locsearch__count" id="loccount">Loading…</span>
+        <button class="locgeo" id="locgeo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Use my location</button>
+      </div>
+    </div>
+    <div class="loclist" id="loclist"></div>
+  </div>
+  <div class="locmap-wrap"><div id="locmap"></div></div>
+</section>
+
+<!-- ===== order CTA ===== -->
+<section class="section--tight band-sand center">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="justify-content:center"><span class="dots"></span> Hungry now?</span>
+    <h2 class="h-2 reveal" style="--d:80ms;margin-top:.5rem">Order ahead, skip the wait</h2>
+    <div class="reveal" style="--d:160ms;margin-top:1.5rem">
+      <a class="btn" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
+        <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<script src="data.js?v=2"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="hummus.js?v=2"></script>
+</body>
+</html>

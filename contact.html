@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Contact | Hummus Republic</title>
+<meta name="description" content="Get in touch with Hummus Republic — questions, feedback, catering, franchise or careers. We'd love to hear from you.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C392F'/%3E%3Cg fill='none' stroke='%23F6CA75' stroke-width='1.5'%3E%3Cellipse cx='16' cy='16' rx='7.5' ry='10.5'/%3E%3Cpath d='M16 5.5C10.5 11 10.5 21 16 26.5'/%3E%3Cpath d='M16 5.5C21.5 11 21.5 21 16 26.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hummus.css?v=2">
+<style>
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.cform{display:grid;gap:1.1rem}
+.cfield{display:flex;flex-direction:column;gap:.45rem}
+.cfield label{font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.cfield input,.cfield select,.cfield textarea{font-family:var(--body);font-size:1rem;color:var(--ink);
+  background:var(--cream);border:1.5px solid var(--line);border-radius:14px;padding:.85em 1em;outline:none;transition:border-color .3s,box-shadow .3s}
+.cfield textarea{min-height:130px;resize:vertical}
+.cfield input:focus,.cfield select:focus,.cfield textarea:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(28,57,47,.1)}
+.crow{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.cthanks{display:none;background:var(--forest);color:var(--cream);border-radius:var(--radius);padding:2rem;text-align:center}
+.cthanks.show{display:block;animation:fadein .5s var(--ease)}
+@keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.cinfo a.big{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(1.4rem,3vw,2rem);color:var(--forest);display:inline-block;border-bottom:3px solid var(--gold);line-height:1.1}
+.cinfo a.big:hover{color:var(--clay)}
+.clist{margin-top:2rem;display:grid;gap:1rem}
+.clist a{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding:.9rem 0;font-family:var(--body);font-weight:600}
+.clist a:hover{color:var(--clay)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}.crow{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-page="contact">
+
+<header class="phead phead--sand grain">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Contact</span>
+    <h1 class="h-hero reveal" style="--d:60ms">Say hello</h1>
+    <p class="lede reveal" style="--d:140ms;max-width:48ch">Questions, feedback, a missing rewards point, a catering or franchise inquiry — we read every note.</p>
+  </div>
+</header>
+
+<section class="section wrap">
+  <div class="contact">
+    <div class="reveal">
+      <form class="cform" id="cform" novalidate>
+        <div class="crow">
+          <div class="cfield"><label for="c-name">Name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="cfield"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="cfield"><label for="c-topic">Topic</label>
+          <select id="c-topic" name="topic"><option>General question</option><option>Feedback</option><option>Catering</option><option>Franchise</option><option>Careers</option><option>Rewards / missing points</option></select>
+        </div>
+        <div class="cfield"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+        <button class="btn btn--block" type="submit">Send message
+          <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></button>
+      </form>
+      <div class="cthanks" id="cthanks">
+        <h3 class="h-3" style="color:var(--cream)">Thanks — we're on it!</h3>
+        <p style="opacity:.85;margin-top:.5rem">We'll get back to you within 2 business days.</p>
+      </div>
+    </div>
+    <div class="cinfo reveal" style="--d:120ms">
+      <span class="eyebrow"><span class="dots"></span> Prefer the shortcuts?</span>
+      <div class="clist">
+        <a href="https://www.catering.thehummusrepublic.com/" target="_blank" rel="noopener">Catering inquiries <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a href="franchise.html">Franchise opportunities <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a href="careers.html">Careers &amp; hiring <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a href="locations.html">Find a location <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+      </div>
+      <div style="margin-top:2.4rem">
+        <span class="eyebrow"><span class="dots"></span> Follow along</span>
+        <p class="lede" style="margin-top:.6rem">Drops, secret menu and golden-hour energy.</p>
+        <div class="row" style="margin-top:1rem;gap:1.2rem">
+          <a class="textlink" href="https://www.instagram.com/hummusrepublic/?hl=en" target="_blank" rel="noopener">Instagram</a>
+          <a class="textlink" href="https://www.tiktok.com/@hummusrepublic" target="_blank" rel="noopener">TikTok</a>
+          <a class="textlink" href="https://www.facebook.com/hummusrepublic/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="data.js?v=2"></script>
+<script>
+  (function () {
+    var form = document.getElementById('cform'), thanks = document.getElementById('cthanks');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      form.style.display = 'none'; thanks.classList.add('show');
+    });
+  })();
+</script>
+<script src="hummus.js?v=2"></script>
+</body>
+</html>

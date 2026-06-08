@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Location | Hummus Republic</title>
+<meta name="description" content="Hours, address, ordering and reviews for your Hummus Republic location.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C392F'/%3E%3Cg fill='none' stroke='%23F6CA75' stroke-width='1.5'%3E%3Cellipse cx='16' cy='16' rx='7.5' ry='10.5'/%3E%3Cpath d='M16 5.5C10.5 11 10.5 21 16 26.5'/%3E%3Cpath d='M16 5.5C21.5 11 21.5 21 16 26.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="hummus.css?v=2">
+</head>
+<body data-page="locations">
+
+<header class="phead phead--forest grain">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; <a href="locations.html">Locations</a> &rsaquo; <span id="loc-crumb">Location</span></span>
+    <h1 class="h-hero reveal" id="loc-title" style="--d:60ms">Location</h1>
+  </div>
+</header>
+
+<!-- ===== detail (filled by JS from ?id=) ===== -->
+<section class="section" id="locdetail"></section>
+
+<!-- ===== reviews ===== -->
+<section class="section--tight band-sand reviews" style="overflow:hidden">
+  <div class="wrap" style="margin-bottom:2rem">
+    <span class="eyebrow reveal"><span class="dots"></span> What our customers are saying</span>
+    <h2 class="h-2 reveal" style="--d:80ms;margin-top:.5rem">Five-star regulars</h2>
+  </div>
+  <div data-reviews-detail></div>
+</section>
+
+<script src="data.js?v=2"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="hummus.js?v=2"></script>
+<script>
+  // hummus.js has already resolved the location title by now — mirror it into the crumb
+  (function () {
+    var t = document.getElementById('loc-title'), c = document.getElementById('loc-crumb');
+    if (t && c && t.textContent) c.textContent = t.textContent;
+  })();
+</script>
+</body>
+</html>
