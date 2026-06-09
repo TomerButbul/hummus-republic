@@ -18,11 +18,20 @@
    back to Clash Display (a premium free geometric display from
    Fontshare, loaded via <link>), then to system. Same pattern the
    nüdes build used for BC Novatica. */
+/* Dunbar — the brand title face (PDF: "Dunbar Low Bold", uppercase). These
+   are the brand's real Dunbar webfonts (self-hosted in /fonts). If you have
+   the licensed Dunbar LOW Bold woff2, drop it in and add it to the src below
+   — local() will prefer it automatically. */
 @font-face{
-  font-family:'Dunbar Low';
+  font-family:'Dunbar';
   src:local('Dunbar Low Bold'),local('DunbarLow-Bold'),
-      url('fonts/DunbarLow-Bold.woff2') format('woff2');
+      url('fonts/DunbarText-ExtraBold.woff') format('woff');
   font-weight:600 800;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Dunbar';
+  src:local('Dunbar Low'),url('fonts/DunbarText-Regular.woff') format('woff');
+  font-weight:300 500;font-style:normal;font-display:swap;
 }
 
 /* ============================================================
@@ -33,14 +42,14 @@
   --cream:#FEFBFA;        /* MAIN — backgrounds, text on dark */
   --sand:#EBE2D9;         /* SECONDARY — warm neutral */
   --sand-2:#E3D7C8;       /* deeper sand for bands */
-  --forest:#135B38;       /* PRIMARY brand green — matches the current site */
-  --forest-700:#0F4A2E;
-  --forest-900:#0B3A24;
-  --forest-600:#1C7A4B;   /* lifted green for hovers */
-  --gold:#EEBE2E;         /* ACCENT — bright warm golden */
-  --gold-deep:#D89F1C;
-  --clay:#B26A4F;         /* ACCENT — terracotta (warmer) */
-  --clay-soft:#C5836A;
+  --forest:#1C392F;       /* NEUTRAL — brand green (deep), used for type/accents/footer */
+  --forest-700:#163026;
+  --forest-900:#10211A;
+  --forest-600:#2A4E40;   /* lifted green for hovers */
+  --gold:#F6CA75;         /* ACCENT — brand golden */
+  --gold-deep:#E9B450;
+  --clay:#A8634E;         /* ACCENT — brand terracotta */
+  --clay-soft:#B97A65;
   --espresso:#271214;     /* SECONDARY dark — near-black warm */
 
   /* Working surfaces / ink */
@@ -53,7 +62,7 @@
   --line-cream:rgba(254,251,250,.20);
 
   /* Fonts */
-  --display:'Dunbar Low','Clash Display',system-ui,sans-serif; /* brand title face, Clash fallback */
+  --display:'Dunbar','Clash Display',system-ui,sans-serif; /* brand title face (Dunbar), Clash fallback */
   --body:'Switzer','Inter',system-ui,sans-serif;
   --serif:'Fraunces','Georgia',serif;            /* editorial accent */
 
@@ -63,8 +72,8 @@
   --wrap:1320px;
   --gut:clamp(1.25rem,5vw,4.5rem);
   --section:clamp(5rem,11vh,9.5rem);
-  --radius:22px;
-  --radius-lg:30px;
+  --radius:12px;
+  --radius-lg:16px;
   --pill:100px;
 
   --ease:cubic-bezier(.2,.7,.2,1);

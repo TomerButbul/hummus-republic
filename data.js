@@ -155,36 +155,36 @@
   /* ---- Menu (no prices on marketing site — matches live) -- */
   var menu = [
     { key:'build', name:'Build Your Own', blurb:'Four stations, your rules. Pick a base, a protein, hummus & spreads, then pile on the toppings.', items:[
-      { name:'Build Your Own Bowl', img:'images/bowl.jpg', kcal:'480–760 cal', tags:['Most popular','GF option'], desc:'Start with greens or grains, add a protein, a scoop of hummus and unlimited fresh toppings.' },
-      { name:'Build Your Own Pita', img:'images/pita-bread.jpg', kcal:'520–720 cal', tags:['Vegetarian option'], desc:'A warm, fluffy pita pocket stuffed exactly how you like it — protein, spreads, crunch.' },
-      { name:'Build Your Own Wrap', img:'images/oil-pour.jpg', kcal:'560–780 cal', tags:['On the go'], desc:'Everything you love about a bowl, rolled tight and ready to travel.' }
+      { name:'Build Your Own Bowl', img:'images/mi-bowl.jpg', kcal:'480–760 cal', tags:['Most popular','GF option'], desc:'Start with greens or grains, add a protein, a scoop of hummus and unlimited fresh toppings.' },
+      { name:'Build Your Own Pita', img:'images/mi-pita.jpg', kcal:'520–720 cal', tags:['Vegetarian option'], desc:'A warm, fluffy pita pocket stuffed exactly how you like it — protein, spreads, crunch.' },
+      { name:'Build Your Own Wrap', img:'images/mi-wrap.jpg', kcal:'560–780 cal', tags:['On the go'], desc:'Everything you love about a bowl, rolled tight and ready to travel.' }
     ]},
     { key:'bowls', name:'Signature Bowls', blurb:'Our chefs already did the building. Protein-forward, generously loaded, deeply craveable.', items:[
-      { name:'Gyro Garden Bowl', img:'images/bowl-eat.jpg', kcal:'710 cal', tags:['Gluten Free'], desc:'Beef & lamb gyro, zesty feta, traditional & olive hummus, artichoke hearts, olives, tomatoes, fried eggplant and tzatziki.' },
-      { name:'Fire Shawarma Bowl', img:'images/toast.jpg', kcal:'680 cal', tags:['Spicy','High protein'], desc:'Chicken shawarma, Moroccan hot sauce, sumac onions, cabbage, tomatoes and a swirl of spicy hummus over your base.' },
-      { name:'Falafel Fusion Bowl', img:'images/bowl-grain.jpg', kcal:'620 cal', tags:['Vegan','GF'], desc:'Crispy house falafel, traditional hummus, cucumber, tomato, cornichons, sumac onions and tahini.' }
+      { name:'Gyro Garden Bowl', img:'images/mi-gyro.jpg', kcal:'710 cal', tags:['Gluten Free'], desc:'Beef & lamb gyro, zesty feta, traditional & olive hummus, artichoke hearts, olives, tomatoes, fried eggplant and tzatziki.' },
+      { name:'Fire Shawarma Bowl', img:'images/mi-shawarma.jpg', kcal:'680 cal', tags:['Spicy','High protein'], desc:'Chicken shawarma, Moroccan hot sauce, sumac onions, cabbage, tomatoes and a swirl of spicy hummus over your base.' },
+      { name:'Falafel Fusion Bowl', img:'images/mi-bowl.jpg', kcal:'620 cal', tags:['Vegan','GF'], desc:'Crispy house falafel, traditional hummus, cucumber, tomato, cornichons, sumac onions and tahini.' }
     ]},
     { key:'sandwiches', name:'Sandwiches', blurb:'Handhelds with heart — toasted pita and flatbread, stacked and sauced.', items:[
-      { name:'Greek Sandwich', img:P.greek, kcal:'640 cal', tags:['Vegetarian'], desc:'Feta, cucumber, tomato, olives, romaine and tzatziki folded into warm pita.' },
-      { name:'Spicy Chicken Sandwich', img:P.chicken, kcal:'820 cal', tags:['Spicy'], desc:'Crispy chicken patty, sliced tomatoes, white cabbage, onions, jalapeños & Moroccan hot sauce. Served with sweet potato fries.' },
-      { name:'Earth Burger', img:P.burger, kcal:'700 cal', tags:['Vegan'], desc:'Crispy falafel patty, sliced tomatoes, onions, white cabbage, cherry peppers & ketchup. Served with sweet potato fries.' }
+      { name:'Greek Sandwich', img:'images/mi-greek.jpg', kcal:'640 cal', tags:['Vegetarian'], desc:'Feta, cucumber, tomato, olives, romaine and tzatziki folded into warm pita.' },
+      { name:'Spicy Chicken Sandwich', img:'images/mi-chicken.jpg', kcal:'820 cal', tags:['Spicy'], desc:'Crispy chicken patty, sliced tomatoes, white cabbage, onions, jalapeños & Moroccan hot sauce. Served with sweet potato fries.' },
+      { name:'Earth Burger', img:'images/mi-burger.jpg', kcal:'700 cal', tags:['Vegan'], desc:'Crispy falafel patty, sliced tomatoes, onions, white cabbage, cherry peppers & ketchup. Served with sweet potato fries.' }
     ]},
     { key:'sides', name:'Sides & Specials', blurb:'The supporting cast that steals the show.', items:[
-      { name:'Pita Chips & Hummus', img:'images/hummus.jpg', kcal:'420 cal', tags:['Vegetarian','Share'], desc:'Warm, crisp pita chips with a scoop of our traditional hummus.' },
-      { name:'Hummus & Spreads', img:'images/hands-spread.jpg', kcal:'260 cal', tags:['Vegan','GF'], desc:'Traditional, olive or spicy — silky, slow-blended, finished with olive oil.' },
-      { name:'House Falafel', img:P.falafel, kcal:'310 cal', tags:['Vegan'], desc:'Crisp-outside, herby-inside chickpea falafel, fried to order.' },
-      { name:'Sweet Potato Fries', img:P.sweetfries, kcal:'380 cal', tags:['Vegetarian'], desc:'Golden, lightly spiced and impossible to share.' },
-      { name:'Street Style Fries', img:P.streetfries, kcal:'520 cal', tags:['Loaded'], desc:'Fries piled with hummus, sauces and toppings — the late-night legend.' },
-      { name:'Side of Dolmades', img:'images/olive-table.jpg', kcal:'180 cal', tags:['Vegan','GF'], desc:'Grape leaves stuffed with herbed rice, a Mediterranean classic.' }
+      { name:'Pita Chips & Hummus', img:'images/c-chips.jpg', kcal:'420 cal', tags:['Vegetarian','Share'], desc:'Warm, crisp pita chips with a scoop of our traditional hummus.' },
+      { name:'Hummus & Spreads', img:'images/mi-spreads.jpg', kcal:'260 cal', tags:['Vegan','GF'], desc:'Traditional, olive or spicy — silky, slow-blended, finished with olive oil.' },
+      { name:'House Falafel', img:'images/mi-falafel.jpg', kcal:'310 cal', tags:['Vegan'], desc:'Crisp-outside, herby-inside chickpea falafel, fried to order.' },
+      { name:'Sweet Potato Fries', img:'images/mi-sweetfries.jpg', kcal:'380 cal', tags:['Vegetarian'], desc:'Golden, lightly spiced and impossible to share.' },
+      { name:'Street Style Fries', img:'images/mi-streetfries.jpg', kcal:'520 cal', tags:['Loaded'], desc:'Fries piled with hummus, sauces and toppings — the late-night legend.' },
+      { name:'Side of Dolmades', img:'images/mi-dolmades.jpg', kcal:'180 cal', tags:['Vegan','GF'], desc:'Grape leaves stuffed with herbed rice, a Mediterranean classic.' }
     ]},
     { key:'drinks', name:'Drinks', blurb:'Cool it down.', items:[
-      { name:'Tahini Shake', img:P.shake, kcal:'410 cal', tags:['Signature'], desc:'Creamy, nutty and just sweet enough — our most-talked-about pour.' },
-      { name:'Fresh Lemonade', img:P.lemonade, kcal:'150 cal', tags:['Vegan'], desc:'Hand-squeezed, bright and not too sweet.' },
-      { name:'Fountain Drink', img:P.fountain, kcal:'0–200 cal', tags:[], desc:'All your favorites, ice-cold and bottomless.' }
+      { name:'Tahini Shake', img:'images/mi-shake.jpg', kcal:'410 cal', tags:['Signature'], desc:'Creamy, nutty and just sweet enough — our most-talked-about pour.' },
+      { name:'Fresh Lemonade', img:'images/mi-lemonade.jpg', kcal:'150 cal', tags:['Vegan'], desc:'Hand-squeezed, bright and not too sweet.' },
+      { name:'Fountain Drink', img:'images/mi-fountain.jpg', kcal:'0–200 cal', tags:[], desc:'All your favorites, ice-cold and bottomless.' }
     ]},
     { key:'kids', name:"Kid's Meal", blurb:'Little Republic, big flavor.', items:[
-      { name:"Kid's Chicken Bowl", img:P.kids, kcal:'340 cal', tags:['GF option'], desc:'Tender chicken, rice and a mild side — built for smaller appetites.' },
-      { name:"Kid's Chicken Sandwich", img:P.chicken, kcal:'420 cal', tags:[], desc:'Crispy chicken strips & ketchup, served with a side.' }
+      { name:"Kid's Chicken Bowl", img:'images/mi-kidchicken.jpg', kcal:'340 cal', tags:['GF option'], desc:'Tender chicken, rice and a mild side — built for smaller appetites.' },
+      { name:"Kid's Chicken Sandwich", img:'images/mi-chicken.jpg', kcal:'420 cal', tags:[], desc:'Crispy chicken strips & ketchup, served with a side.' }
     ]}
   ];
 
