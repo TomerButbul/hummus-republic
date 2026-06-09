@@ -53,7 +53,7 @@
     var K = HR.links;
     var navItems = [
       { label: 'Menu', href: 'menu.html', key: 'menu' },
-      { label: 'Catering', href: K.catering, ext: true },
+      { label: 'Catering', href: 'catering.html', key: 'catering' },
       { label: 'Rewards', href: 'rewards.html', key: 'rewards' },
       { label: 'Franchise', href: 'franchise.html', key: 'franchise' },
       { label: 'Locations', href: 'locations.html', key: 'locations' }
@@ -97,7 +97,7 @@
           '<a href="' + K.tiktok + '" target="_blank" rel="noopener" aria-label="TikTok">' + TT + '</a></div>' +
       '</div>' +
       '<div class="footer__col"><h4>About</h4><a href="about.html">Our Story</a><a href="careers.html">Careers</a><a href="locations.html">Locations</a><a href="franchise.html">Franchise Info</a></div>' +
-      '<div class="footer__col"><h4>Explore</h4><a href="' + K.catering + '" target="_blank" rel="noopener">Catering</a><a href="' + K.giftcards + '" target="_blank" rel="noopener">Gift Cards</a><a href="' + K.nutrition + '" target="_blank" rel="noopener">Nutrition &amp; Allergens</a><a href="rewards.html">Rewards</a><a href="contact.html">Contact Us</a></div>' +
+      '<div class="footer__col"><h4>Explore</h4><a href="catering.html">Catering</a><a href="' + K.giftcards + '" target="_blank" rel="noopener">Gift Cards</a><a href="' + K.nutrition + '" target="_blank" rel="noopener">Nutrition &amp; Allergens</a><a href="rewards.html">Rewards</a><a href="contact.html">Contact Us</a></div>' +
       '<div class="footer__col"><h4>Get the App</h4><p style="font-size:.92rem;opacity:.8;margin-bottom:.3rem">Order ahead, earn points, unlock a free bowl.</p><div class="footer__apps">' +
         '<a class="storebadge" href="' + K.appStore + '" target="_blank" rel="noopener">' + APPLE + '<span><small>Download on the</small><b>App Store</b></span></a>' +
         '<a class="storebadge" href="' + K.googlePlay + '" target="_blank" rel="noopener">' + PLAY + '<span><small>Get it on</small><b>Google Play</b></span></a>' +
@@ -234,17 +234,43 @@
   }
   function gmaps(loc) { return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Hummus Republic ' + loc.addr + ' ' + loc.line); }
 
+  function hrParseTime(t) {
+    var m = (t || '').match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i); if (!m) return null;
+    var h = (+m[1]) % 12; if (/PM/i.test(m[3])) h += 12; return h * 60 + (+m[2]);
+  }
+  function hrOpenState(loc) {
+    if (!loc || !loc.hours) return null;
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var now = new Date(), span = loc.hours[days[now.getDay()]];
+    if (!span || /closed/i.test(span)) return { open: false, label: 'Closed today' };
+    var p = span.split(/[–-]/), s = hrParseTime(p[0]), e = hrParseTime(p[1]);
+    if (s == null || e == null) return { open: false, span: span };
+    var mins = now.getHours() * 60 + now.getMinutes();
+    return { open: mins >= s && mins < e, span: span, until: (p[1] || '').trim(), opensAt: (p[0] || '').trim() };
+  }
+
   (function locations() {
     var mapEl = document.getElementById('locmap');
     var listEl = document.getElementById('loclist');
     if (!mapEl || !listEl || !window.HR || !window.L) return;
     var locs = HR.locations;
+    var curFilter = 'all';
 
     var map = L.map(mapEl, { scrollWheelZoom: false, zoomControl: true }).setView([39.5, -96.5], 4);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19
     }).addTo(map);
     mapEl.addEventListener('click', function () { map.scrollWheelZoom.enable(); });
+
+    var statsEl = document.getElementById('locstats');
+    if (statsEl) {
+      var openN = locs.filter(function (l) { return l.status === 'open'; }).length;
+      var states = {}; locs.forEach(function (l) { states[l.state] = 1; });
+      setHTML(statsEl,
+        '<div class="locstat"><b>' + openN + '</b><span>Open now</span></div>' +
+        '<div class="locstat"><b>' + (locs.length - openN) + '</b><span>Coming soon</span></div>' +
+        '<div class="locstat"><b>' + Object.keys(states).length + '</b><span>States</span></div>');
+    }
 
     var markers = {};
     function setActive(slug) {
@@ -262,23 +288,28 @@
     });
 
     var countEl = document.getElementById('loccount');
-    function render(filter) {
-      filter = (filter || '').trim().toLowerCase();
+    var searchEl = document.getElementById('locsearch');
+    function render() {
+      var q = (searchEl ? searchEl.value : '').trim().toLowerCase();
       var shown = 0, html = '';
       locs.forEach(function (loc) {
         var hay = (loc.city + ' ' + loc.state + ' ' + loc.line + ' ' + loc.addr).toLowerCase();
-        var match = !filter || hay.indexOf(filter) > -1;
-        if (markers[loc.slug]) markers[loc.slug].setOpacity(match ? 1 : 0.18);
+        var match = (!q || hay.indexOf(q) > -1) && (curFilter === 'all' || loc.status === curFilter);
+        if (markers[loc.slug]) markers[loc.slug].setOpacity(match ? 1 : 0.16);
         if (!match) return;
         shown++;
-        var pill = loc.status === 'open' ? '<span class="pill pill--open">Open</span>' : '<span class="pill pill--soon">Coming soon</span>';
+        var os = loc.status === 'open' ? hrOpenState(loc) : null;
+        var pill = loc.status !== 'open' ? '<span class="pill pill--soon">Coming soon</span>'
+          : (os && os.open ? '<span class="pill pill--opennow">Open now</span>' : '<span class="pill pill--open">Open</span>');
+        var hours = (loc.status === 'open' && os) ? '<div class="loccard__hours">' +
+          (os.open ? ('Open until <b>' + os.until + '</b>') : (os.opensAt ? ('Opens <b>' + os.opensAt + '</b>') : 'Hours vary')) + '</div>' : '';
         var lnks = loc.status === 'open'
           ? '<a href="location.html?id=' + loc.slug + '">View details</a><a href="' + gmaps(loc) + '" target="_blank" rel="noopener">Directions</a>'
           : '<a href="' + gmaps(loc) + '" target="_blank" rel="noopener">Directions</a>';
         html += '<button class="loccard" data-slug="' + loc.slug + '"><div class="loccard__top"><h3>' + loc.city + ', ' + loc.state + '</h3>' + pill + '</div>' +
-          '<div class="loccard__addr">' + loc.addr + '<br>' + loc.line + '</div><div class="loccard__links">' + lnks + '</div></button>';
+          '<div class="loccard__addr">' + loc.addr + '<br>' + loc.line + '</div>' + hours + '<div class="loccard__links">' + lnks + '</div></button>';
       });
-      setHTML(listEl, html || '<div class="locpanel-empty">No locations match “' + filter + '”. Try a city or state.</div>');
+      setHTML(listEl, html || '<div class="locpanel-empty">No locations match your search. Try a city or state.</div>');
       if (countEl) countEl.textContent = shown + ' location' + (shown === 1 ? '' : 's');
       listEl.querySelectorAll('.loccard').forEach(function (c) {
         c.addEventListener('click', function (e) {
@@ -292,8 +323,16 @@
       });
     }
 
-    var search = document.getElementById('locsearch');
-    if (search) search.addEventListener('input', function () { render(search.value); });
+    var chips = document.querySelectorAll('.locchip');
+    chips.forEach(function (ch) {
+      ch.addEventListener('click', function () {
+        curFilter = ch.getAttribute('data-filter') || 'all';
+        chips.forEach(function (c) { c.classList.toggle('active', c === ch); });
+        render();
+      });
+    });
+    if (searchEl) searchEl.addEventListener('input', render);
+
     var geo = document.getElementById('locgeo');
     if (geo) geo.addEventListener('click', function () {
       if (!navigator.geolocation) return;
@@ -307,7 +346,14 @@
       }, function () { geo.textContent = 'Location off'; });
     });
 
-    render('');
+    var csEl = document.getElementById('comingsoon');
+    if (csEl) {
+      setHTML(csEl, locs.filter(function (l) { return l.status === 'soon'; }).map(function (l) {
+        return '<a class="csoon" href="' + gmaps(l) + '" target="_blank" rel="noopener"><b>' + l.city + ', ' + l.state + '</b><span>' + l.line + '</span></a>';
+      }).join(''));
+    }
+
+    render();
     setTimeout(function () { map.invalidateSize(); }, 200);
   })();
 

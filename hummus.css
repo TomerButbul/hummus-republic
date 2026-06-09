@@ -616,6 +616,50 @@ ul{list-style:none}
 .hr-pin{display:grid;place-items:center}
 .hr-pin svg{filter:drop-shadow(0 6px 8px rgba(16,33,26,.4))}
 
+/* ---- Locations: enhanced (stats, filters, open-now, coming soon) ---- */
+.locstats{display:flex;flex-wrap:wrap;gap:clamp(1.6rem,4vw,3.4rem);margin-top:1.9rem}
+.locstat b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(2rem,4vw,2.9rem);color:var(--forest);line-height:1}
+.locstat span{font-family:var(--body);font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.band-forest .locstat b{color:var(--gold)}
+.locfilters{display:flex;gap:.5rem;flex-wrap:wrap;padding:.9rem var(--gut) .2rem}
+.locchip{font-family:var(--body);font-weight:600;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.55em 1.05em;border-radius:var(--pill);border:1.5px solid var(--line);color:var(--ink-soft);background:none;transition:.3s var(--ease)}
+.locchip:hover{border-color:var(--forest);color:var(--forest)}
+.locchip.active{background:var(--forest);border-color:var(--forest);color:var(--cream)}
+.pill--opennow{background:rgba(46,120,75,.14);color:#2c7a4e}
+.pill--opennow::before{content:"";width:.5em;height:.5em;border-radius:50%;background:#3a8f5f;box-shadow:0 0 0 0 rgba(58,143,95,.5);animation:livedot 2.4s infinite}
+@media (prefers-reduced-motion:reduce){.pill--opennow::before{animation:none}}
+.loccard__hours{font-size:.82rem;color:var(--ink-soft);margin-top:.45rem}
+.loccard__hours b{color:var(--forest);font-weight:600}
+#locmap,.lmap{min-height:72vh}
+@media (max-width:920px){#locmap,.lmap{min-height:46vh}}
+.comingsoon{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.7rem}
+.csoon{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:1.05rem 1.2rem;background:var(--cream);transition:.35s var(--ease)}
+.csoon:hover{border-color:var(--forest);transform:translateY(-3px);box-shadow:0 20px 40px -34px rgba(28,57,47,.45)}
+.csoon b{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:1.02rem;color:var(--forest);display:block;line-height:1.05}
+.csoon span{display:block;font-size:.8rem;color:var(--ink-soft);margin-top:.3rem}
+
+/* ============================================================
+   Catering page
+   ============================================================ */
+.catboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem)}
+.catbox{display:flex;flex-direction:column;background:var(--cream);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.catbox:hover{transform:translateY(-4px);box-shadow:0 30px 60px -44px rgba(28,57,47,.5)}
+.catbox .media{aspect-ratio:4/3;border-radius:0}
+.catbox__body{padding:1.5rem 1.6rem 1.8rem;display:flex;flex-direction:column;flex:1}
+.catbox__serves{font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.catbox h3{font-size:1.3rem;margin:.4rem 0 .7rem;letter-spacing:0}
+.catbox p{font-size:.94rem;color:var(--ink-soft);flex:1}
+.catbox .btn{margin-top:1.4rem}
+@media (max-width:820px){.catboxes{grid-template-columns:1fr}}
+.usecases{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem,2vw,1.5rem)}
+.usecase{background:var(--cream);border:1px solid var(--line-soft);border-radius:var(--radius);padding:1.6rem 1.5rem}
+.usecase h3{font-size:1.12rem;margin-bottom:.8rem;letter-spacing:0}
+.usecase ul{display:flex;flex-direction:column;gap:.55rem}
+.usecase li{display:flex;gap:.6em;font-size:.9rem;color:var(--ink-soft);line-height:1.4}
+.usecase li::before{content:"";flex:none;width:.5em;height:.5em;margin-top:.5em;border-radius:50%;background:var(--gold-deep)}
+@media (max-width:900px){.usecases{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.usecases{grid-template-columns:1fr}}
+
 /* ============================================================
    LOCATION DETAIL page
    ============================================================ */

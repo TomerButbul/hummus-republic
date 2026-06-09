@@ -5,25 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 <title>Locations | Find a Hummus Republic Near You</title>
-<meta name="description" content="Find your nearest Hummus Republic. Search the map by city or ZIP, see what's open and what's coming soon, and order ahead for pickup or delivery.">
+<meta name="description" content="Find your nearest Hummus Republic. Search the map by city or ZIP, filter by open or coming soon, see who's open now, and order ahead for pickup or delivery.">
 <link rel="icon" href="images/hr-mark.svg">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="hummus.css?v=6">
+<link rel="stylesheet" href="hummus.css?v=7">
 </head>
 <body data-page="locations">
 
-<!-- ===== compact header ===== -->
-<header class="phead phead--sand grain" style="padding-bottom:clamp(1.8rem,4vh,3rem)">
+<!-- ===== header with live stats ===== -->
+<header class="phead phead--sand grain">
   <div class="wrap">
     <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Locations</span>
-    <h1 class="h-1 reveal" style="--d:60ms">Find your<br>Republic</h1>
-    <p class="lede reveal" style="--d:140ms">50+ locations and counting. Search by city or ZIP, drop a pin, and order ahead.</p>
+    <h1 class="h-hero reveal" style="--d:60ms">Find your<br>Republic</h1>
+    <p class="lede reveal" style="--d:140ms;max-width:46ch">Search by city or ZIP, see who's open right now, and order ahead for pickup or delivery.</p>
+    <div class="locstats reveal" id="locstats" style="--d:220ms"></div>
   </div>
 </header>
 
-<!-- ===== map + list ===== -->
+<!-- ===== map + filterable list ===== -->
 <section class="locwrap">
   <div class="locpanel">
     <div class="locsearch">
@@ -36,25 +37,42 @@
         <button class="locgeo" id="locgeo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Use my location</button>
       </div>
     </div>
+    <div class="locfilters">
+      <button class="locchip active" type="button" data-filter="all">All</button>
+      <button class="locchip" type="button" data-filter="open">Open</button>
+      <button class="locchip" type="button" data-filter="soon">Coming soon</button>
+    </div>
     <div class="loclist" id="loclist"></div>
   </div>
   <div class="locmap-wrap"><div id="locmap"></div></div>
 </section>
 
+<!-- ===== coming soon expansion ===== -->
+<section class="section wrap">
+  <div class="row between reveal" style="align-items:flex-end;margin-bottom:1.8rem">
+    <div>
+      <span class="eyebrow"><span class="dots"></span> On the horizon</span>
+      <h2 class="h-1" style="margin-top:.5rem">Coming soon<br>to your city</h2>
+    </div>
+    <p class="lede" style="max-width:30ch">We're growing fast. Tap a city for directions and to be first in line on opening day.</p>
+  </div>
+  <div class="comingsoon reveal" id="comingsoon"></div>
+</section>
+
 <!-- ===== order CTA ===== -->
-<section class="section--tight band-sand center">
+<section class="section--tight band-forest center grain" style="position:relative;overflow:hidden">
   <div class="wrap">
-    <span class="eyebrow reveal" style="justify-content:center"><span class="dots"></span> Hungry now?</span>
+    <span class="eyebrow eyebrow--light reveal" style="justify-content:center"><span class="dots"></span> Hungry now?</span>
     <h2 class="h-2 reveal" style="--d:80ms;margin-top:.5rem">Order ahead, skip the wait</h2>
     <div class="reveal" style="--d:160ms;margin-top:1.5rem">
-      <a class="btn" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
+      <a class="btn btn--gold" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
         <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
     </div>
   </div>
 </section>
 
-<script src="data.js?v=6"></script>
+<script src="data.js?v=7"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="hummus.js?v=6"></script>
+<script src="hummus.js?v=7"></script>
 </body>
 </html>
