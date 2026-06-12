@@ -173,6 +173,49 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
 
   /* ============================================================
+     Hero carousel — special offers (home)
+     ============================================================ */
+  (function heroCarousel() {
+    var car = document.querySelector('.hcar');
+    if (!car) return;
+    var slides = [].slice.call(car.querySelectorAll('.hslide'));
+    var dotsWrap = car.querySelector('.hcar__dots');
+    if (slides.length < 2) { if (slides[0]) slides[0].classList.add('is-active'); return; }
+    var i = 0, timer = null, DUR = 6000;
+    var dots = slides.map(function (_, idx) {
+      var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', 'Offer ' + (idx + 1));
+      b.addEventListener('click', function () { go(idx); restart(); });
+      if (dotsWrap) dotsWrap.appendChild(b); return b;
+    });
+    function show(n) {
+      slides.forEach(function (s, idx) { s.classList.toggle('is-active', idx === n); });
+      dots.forEach(function (d, idx) { d.classList.toggle('on', idx === n); });
+      i = n;
+    }
+    function go(n) { show((n + slides.length) % slides.length); }
+    function next() { go(i + 1); }
+    function prev() { go(i - 1); }
+    function start() { if (reduce) return; stop(); timer = setInterval(next, DUR); }
+    function stop() { if (timer) clearInterval(timer); timer = null; }
+    function restart() { stop(); start(); }
+    var nx = car.querySelector('.hcar__next'), pv = car.querySelector('.hcar__prev');
+    if (nx) nx.addEventListener('click', function () { next(); restart(); });
+    if (pv) pv.addEventListener('click', function () { prev(); restart(); });
+    car.addEventListener('mouseenter', stop);
+    car.addEventListener('mouseleave', start);
+    car.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { next(); restart(); } else if (e.key === 'ArrowLeft') { prev(); restart(); }
+    });
+    var x0 = null;
+    car.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    car.addEventListener('touchend', function (e) {
+      if (x0 == null) return; var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) { (dx < 0 ? next : prev)(); restart(); } x0 = null;
+    }, { passive: true });
+    show(0); start();
+  })();
+
+  /* ============================================================
      Data-driven: REVIEW TICKER
      ============================================================ */
   (function reviewTicker() {

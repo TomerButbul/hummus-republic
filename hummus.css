@@ -395,6 +395,49 @@ ul{list-style:none}
 @media (max-width:780px){.hero__badge{display:none}.hero{min-height:86svh}}
 
 /* ============================================================
+   HOME — hero carousel (special offers)
+   ============================================================ */
+.hcar{position:relative;min-height:92svh;overflow:hidden;background:var(--forest);outline:none}
+.hslide{position:absolute;inset:0;opacity:0;visibility:hidden;display:flex;align-items:flex-end;
+  transition:opacity 1.1s var(--ease),visibility 1.1s var(--ease)}
+.hslide.is-active{opacity:1;visibility:visible}
+.hslide__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+  filter:saturate(1.02) contrast(1.02) brightness(.9);transform:scale(1.06);transition:transform 8s linear}
+.hslide.is-active .hslide__bg{transform:scale(1.14)}
+.hslide::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(16,33,26,.44) 0%,rgba(16,33,26,.06) 28%,rgba(16,33,26,.16) 58%,rgba(16,33,26,.74) 100%)}
+.hslide__in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin-inline:auto;padding:0 var(--gut) clamp(3.6rem,9vh,6rem)}
+.hslide .eyebrow{color:var(--gold);margin-bottom:1rem}
+.hslide h2{color:var(--cream);text-shadow:0 4px 50px rgba(12,20,14,.4)}
+.hslide h2 em{color:var(--gold)}
+.hslide__lede{max-width:42ch;color:rgba(254,251,250,.92);margin-top:1.1rem;
+  font-size:clamp(1.05rem,1.5vw,1.35rem);text-shadow:0 1px 20px rgba(12,20,14,.45)}
+.hslide__cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.7rem}
+/* entrance: animate the active slide's content in */
+.js .hslide .eyebrow,.js .hslide h2,.js .hslide__lede,.js .hslide__cta{opacity:0;transform:translateY(18px)}
+.hslide.is-active .eyebrow,.hslide.is-active h2,.hslide.is-active .hslide__lede,.hslide.is-active .hslide__cta{
+  opacity:1;transform:none;transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.hslide.is-active h2{transition-delay:.32s}
+.hslide.is-active .eyebrow{transition-delay:.22s}
+.hslide.is-active .hslide__lede{transition-delay:.44s}
+.hslide.is-active .hslide__cta{transition-delay:.56s}
+.hcar__dots{position:absolute;z-index:5;left:50%;bottom:clamp(1.3rem,4vh,2.2rem);transform:translateX(-50%);display:flex;gap:.5rem}
+.hcar__dots button{width:30px;height:4px;border-radius:3px;border:0;padding:0;background:rgba(254,251,250,.4);cursor:pointer;transition:.4s var(--ease)}
+.hcar__dots button.on{background:var(--gold);width:46px}
+.hcar__arrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;
+  border:1px solid rgba(254,251,250,.32);color:var(--cream);display:grid;place-items:center;
+  background:rgba(16,33,26,.18);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:.35s var(--ease)}
+.hcar__arrow:hover{background:var(--cream);color:var(--forest);border-color:var(--cream)}
+.hcar__arrow svg{width:20px;height:20px}
+.hcar__prev{left:clamp(.8rem,2.5vw,1.8rem)}
+.hcar__next{right:clamp(.8rem,2.5vw,1.8rem)}
+@media (max-width:780px){.hcar{min-height:84svh}.hcar__arrow{display:none}}
+@media (prefers-reduced-motion:reduce){
+  .hslide__bg,.hslide.is-active .hslide__bg{transition:none;transform:none}
+  .hslide.is-active .eyebrow,.hslide.is-active h2,.hslide.is-active .hslide__lede,.hslide.is-active .hslide__cta{transition:none}
+}
+
+/* ============================================================
    HOME — category quick-links
    ============================================================ */
 .cats{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(.7rem,1.4vw,1.1rem)}

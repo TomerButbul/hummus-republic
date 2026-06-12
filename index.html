@@ -11,10 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="hummus.css?v=7">
+<link rel="stylesheet" href="hummus.css?v=8">
 <style>
-.badge-center .m{width:38%;color:var(--gold)}
-.philosophy .media{aspect-ratio:5/6}
 /* rewards phone mock */
 .phone{position:relative;width:min(300px,80%);margin-inline:auto;border-radius:38px;background:var(--espresso);
   padding:12px;box-shadow:0 50px 90px -50px rgba(0,0,0,.7),0 0 0 1px rgba(254,251,250,.06)}
@@ -38,39 +36,59 @@
 .phone__tabs .on{color:var(--clay)}
 </style>
 </head>
-<body data-page="home" data-intro>
+<body data-page="home">
 
-<!-- ===== HERO ===== -->
-<section class="hero grain">
-  <img class="hero__bg" src="images/hero-billboard.jpg" alt="A shared table of fresh Mediterranean dishes">
-  <div class="hero__badge" aria-hidden="true">
-    <svg viewBox="0 0 200 200"><defs><path id="bp" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
-      <circle cx="100" cy="100" r="94" fill="#1C392F"></circle>
-      <text fill="#F6CA75" font-family="Switzer,system-ui,sans-serif" font-weight="600" font-size="14.5" letter-spacing="3.4"><textPath href="#bp">BUILD YOUR OWN · FRESH DAILY · PROTEIN-FORWARD · </textPath></text>
-    </svg>
-    <span class="badge-center"><svg class="m" viewBox="0 0 60 80" fill="none" stroke="#F6CA75" stroke-width="3.4" stroke-linecap="round"><ellipse cx="30" cy="40" rx="23.5" ry="35"/><path d="M30 5.5C14 26 14 54 30 74.5"/><path d="M30 5.5C46 26 46 54 30 74.5"/><path d="M30 5.5C23 28 23 52 30 74.5"/><path d="M30 5.5C37 28 37 52 30 74.5"/></svg></span>
-  </div>
-  <div class="hero__in">
-    <span class="eyebrow hero__eyebrow reveal"><span class="dots"></span> Modern Mediterranean</span>
-    <h1 class="h-hero reveal" style="--d:80ms">Fuel your<br>summer<em>.</em></h1>
-    <div class="hero__foot">
-      <div class="hero__lede reveal" style="--d:200ms">
-        <p>$10 protein bowls, all season. Build it your way — base, protein, hummus, the works.</p>
-        <div class="hero__cta">
-          <a class="btn btn--gold" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
-            <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
-          <a class="btn btn--on-dark btn--ghost" href="menu.html">See the Menu</a>
-        </div>
+<!-- ===== HERO CAROUSEL — current offers ===== -->
+<section class="hcar" tabindex="0" aria-roledescription="carousel" aria-label="Current offers">
+  <div class="hslide is-active">
+    <img class="hslide__bg" src="images/band-radicchio.jpg" alt="">
+    <div class="hslide__in">
+      <span class="eyebrow"><span class="dots"></span> Summer special</span>
+      <h2 class="h-hero">$10 protein<br>bowls</h2>
+      <p class="hslide__lede">Fuel your summer. Build your bowl your way — base, protein, hummus, the works — all season long.</p>
+      <div class="hslide__cta">
+        <a class="btn btn--gold" href="https://order.thehummusrepublic.com/find-location" target="_blank" rel="noopener">Order Now
+          <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a class="btn btn--on-dark btn--ghost" href="menu.html">See the menu</a>
       </div>
     </div>
   </div>
+  <div class="hslide">
+    <img class="hslide__bg" src="images/band-community.jpg" alt="">
+    <div class="hslide__in">
+      <span class="eyebrow"><span class="dots"></span> Rewards</span>
+      <h2 class="h-hero">Get a<br>free bowl</h2>
+      <p class="hslide__lede">Download the app and stack 1,600 points — your next bowl's on us, plus members-only perks and double-point drops.</p>
+      <div class="hslide__cta">
+        <a class="btn btn--gold" href="https://apps.apple.com/us/app/hummus-republic-app/id6737941560?uo=4" target="_blank" rel="noopener">Get the app
+          <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a class="btn btn--on-dark btn--ghost" href="rewards.html">How it works</a>
+      </div>
+    </div>
+  </div>
+  <div class="hslide">
+    <img class="hslide__bg" src="images/catering-trays.jpg" alt="">
+    <div class="hslide__in">
+      <span class="eyebrow"><span class="dots"></span> Catering</span>
+      <h2 class="h-hero">Built to<br>share</h2>
+      <p class="hslide__lede">Spreads and boxes that feed the whole room — office lunch, parties and game day, handled.</p>
+      <div class="hslide__cta">
+        <a class="btn btn--gold" href="catering.html">Explore catering
+          <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
+        <a class="btn btn--on-dark btn--ghost" href="https://www.catering.thehummusrepublic.com/" target="_blank" rel="noopener">Start your order</a>
+      </div>
+    </div>
+  </div>
+  <button class="hcar__arrow hcar__prev" type="button" aria-label="Previous offer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="hcar__arrow hcar__next" type="button" aria-label="Next offer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="hcar__dots" role="tablist" aria-label="Choose an offer"></div>
 </section>
 
-<!-- ===== category quick-links ===== -->
+<!-- ===== 1 · pick your shape (build your own) ===== -->
 <section class="section wrap">
   <div class="row between" style="align-items:flex-end;margin-bottom:clamp(1.8rem,4vw,3rem)">
     <div class="reveal">
-      <span class="eyebrow"><span class="dots"></span> The lineup</span>
+      <span class="eyebrow"><span class="dots"></span> Build your own</span>
       <h2 class="h-1" style="margin-top:.5rem">Pick your<br>shape</h2>
     </div>
     <a class="textlink reveal" href="menu.html" style="--d:120ms">Full menu
@@ -86,29 +104,7 @@
   </div>
 </section>
 
-<!-- ===== build your own (4 stations) ===== -->
-<section class="section band-sand grain" style="position:relative;overflow:hidden">
-  <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow"><span class="dots"></span> How it works</span>
-        <h2 class="h-1" style="margin-top:.5rem">Build your own<br>in four moves</h2>
-        <p class="lede mt-1 maxch">Like a Mediterranean Chipotle — walk the line, call your shots. Every bowl, pita and wrap starts with you.</p>
-        <a class="btn mt-2" href="menu.html">Start building
-          <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
-      </div>
-      <div class="reveal-clip" style="--d:120ms"><div class="media philosophy"><img src="images/hero-mezze.jpg" alt="A bowl of hummus drizzled with olive oil"></div></div>
-    </div>
-    <div class="steps mt-3" data-rv-stagger="90" style="margin-top:clamp(2.5rem,5vw,4rem)">
-      <div class="step reveal"><span class="step__n">01</span><h3>Base</h3><p>Greens, grains, or a warm pita pocket. Your foundation.</p></div>
-      <div class="step reveal"><span class="step__n">02</span><h3>Protein</h3><p>Gyro, chicken shawarma, falafel — pile it on.</p></div>
-      <div class="step reveal"><span class="step__n">03</span><h3>Hummus &amp; Spreads</h3><p>Traditional, olive or spicy. Slow-blended, always.</p></div>
-      <div class="step reveal"><span class="step__n">04</span><h3>Toppings</h3><p>Unlimited fresh veg, herbs, sauces and crunch.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== signature bowls ===== -->
+<!-- ===== 2 · signature bowls ===== -->
 <section class="section wrap">
   <div class="row between" style="align-items:flex-end;margin-bottom:clamp(1.8rem,4vw,3rem)">
     <div class="reveal">
@@ -119,17 +115,17 @@
       <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
   </div>
   <div class="itemcards" data-rv-stagger="110">
-    <article class="itemcard reveal" data-tilt="6"><div class="media"><img src="images/mi-gyro.jpg" alt="Gyro Garden Bowl"></div>
+    <article class="itemcard reveal"><div class="media"><img src="images/mi-gyro.jpg" alt="Gyro Garden Bowl"></div>
       <div class="itemcard__row"><h3>Gyro Garden Bowl</h3><span class="kcal">710 cal</span></div>
       <p>Beef &amp; lamb gyro, zesty feta, traditional &amp; olive hummus, artichoke, olives, fried eggplant and tzatziki.</p>
       <div class="itemcard__tags"><span class="tag tag--diet">Gluten Free</span></div>
     </article>
-    <article class="itemcard reveal" data-tilt="6"><div class="media"><img src="images/mi-shawarma.jpg" alt="Fire Shawarma Bowl"></div>
+    <article class="itemcard reveal"><div class="media"><img src="images/mi-shawarma.jpg" alt="Fire Shawarma Bowl"></div>
       <div class="itemcard__row"><h3>Fire Shawarma Bowl</h3><span class="kcal">680 cal</span></div>
       <p>Chicken shawarma, Moroccan hot sauce, sumac onions, cabbage, tomatoes and a swirl of spicy hummus.</p>
       <div class="itemcard__tags"><span class="tag tag--diet">Spicy</span><span class="tag tag--diet">High protein</span></div>
     </article>
-    <article class="itemcard reveal" data-tilt="6"><div class="media"><img src="images/mi-bowl.jpg" alt="Falafel Fusion Bowl"></div>
+    <article class="itemcard reveal"><div class="media"><img src="images/mi-bowl.jpg" alt="Falafel Fusion Bowl"></div>
       <div class="itemcard__row"><h3>Falafel Fusion Bowl</h3><span class="kcal">620 cal</span></div>
       <p>Crispy house falafel, traditional hummus, cucumber, tomato, cornichons, sumac onions and tahini.</p>
       <div class="itemcard__tags"><span class="tag tag--diet">Vegan</span><span class="tag tag--diet">GF</span></div>
@@ -137,37 +133,7 @@
   </div>
 </section>
 
-<!-- ===== full-bleed editorial band ===== -->
-<section class="fullband">
-  <img src="images/band-radicchio.jpg" alt="Mediterranean mezze spread">
-  <div class="fullband__in reveal">
-    <span class="eyebrow"><span class="dots"></span> Mediterranean, modern</span>
-    <h2 class="h-1">Built to <em>share</em></h2>
-    <p class="lede" style="margin-top:1.1rem;max-width:46ch;margin-inline:auto">Generous portions, vibrant ingredients, and flavor that brings people to the table. That's the Republic way.</p>
-    <a class="btn btn--gold" href="about.html">Our story
-      <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
-  </div>
-</section>
-
-<!-- ===== philosophy split ===== -->
-<section class="section wrap">
-  <div class="split split--rev">
-    <div class="split__media reveal-clip"><div class="media"><img src="images/band-table.jpg" alt="Friends sharing a Mediterranean meal"></div></div>
-    <div class="reveal">
-      <span class="eyebrow"><span class="dots"></span> Why Hummus Republic</span>
-      <h2 class="h-1" style="margin-top:.5rem">Fresh, fast,<br>generous</h2>
-      <p class="lede mt-1 maxch">We're the Mediterranean Chipotle of America — quick, fresh food on the go, made from real ingredients with serious flavor. Named for the humble chickpea, built for the way you actually eat.</p>
-      <div class="claims mt-2">
-        <span class="claim claim--solid">Protein-forward</span>
-        <span class="claim">No shortcuts</span>
-        <span class="claim">Vegan options</span>
-        <span class="claim">Gluten-free friendly</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== reviews ticker ===== -->
+<!-- ===== 3 · reviews ticker ===== -->
 <section class="section band-sand reviews" style="overflow:hidden">
   <div class="wrap" style="margin-bottom:2.2rem">
     <div class="row between" style="align-items:flex-end">
@@ -181,8 +147,8 @@
   <div data-reviews></div>
 </section>
 
-<!-- ===== rewards / app band ===== -->
-<section class="section band-forest grain" style="position:relative;overflow:hidden">
+<!-- ===== 4 · rewards / app ===== -->
+<section class="section band-forest" style="position:relative;overflow:hidden">
   <div class="wrap">
     <div class="appband">
       <div class="reveal">
@@ -226,19 +192,7 @@
   </div>
 </section>
 
-<!-- ===== catering band ===== -->
-<section class="fullband">
-  <img src="images/catering-boxes.jpg" alt="A generous catering spread">
-  <div class="fullband__in reveal">
-    <span class="eyebrow"><span class="dots"></span> Hummus Republic Catering</span>
-    <h2 class="h-1">Sharing never<br>tasted <em>this</em> good</h2>
-    <p class="lede" style="margin-top:1.1rem;max-width:44ch;margin-inline:auto">Spreads, boxes and platters that feed the whole room. Office lunches, parties, game day — handled.</p>
-    <a class="btn btn--gold" href="https://www.catering.thehummusrepublic.com/" target="_blank" rel="noopener">Start your order
-      <svg class="arr" width="20" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h19M15 1l5 4-5 4"/></svg></a>
-  </div>
-</section>
-
-<!-- ===== locations teaser ===== -->
+<!-- ===== 5 · locations ===== -->
 <section class="section wrap center">
   <span class="eyebrow reveal" style="justify-content:center"><span class="dots"></span> 50+ locations &amp; growing</span>
   <h2 class="h-1 reveal" style="--d:80ms;margin-top:.6rem">Find your<br>Republic</h2>
@@ -249,21 +203,7 @@
   </div>
 </section>
 
-<!-- ===== utility cards ===== -->
-<section class="section--tight wrap">
-  <div class="ucards reveal" data-rv-stagger="70">
-    <a class="ucard reveal" href="https://hummusrepublic.securetree.com/" target="_blank" rel="noopener"><div class="ucard__t"><b>Gift Cards</b><span>Treat someone</span></div>
-      <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="9.5" width="16" height="10.5" rx="1.5"/><path d="M4 13.5h16M12 9.5V20M8.8 9.5A2.4 2.4 0 1 1 12 6.6 2.4 2.4 0 1 1 15.2 9.5"/></svg></span></a>
-    <a class="ucard reveal" href="https://framerusercontent.com/assets/0tI3ojkkn01Qxqozpym8NtKagCo.pdf" target="_blank" rel="noopener"><div class="ucard__t"><b>Nutrition</b><span>&amp; allergens</span></div>
-      <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg></span></a>
-    <a class="ucard reveal" href="rewards.html"><div class="ucard__t"><b>Rewards</b><span>Earn a free bowl</span></div>
-      <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 6 6.4.5-4.9 4.2 1.5 6.3L12 17.2 6.4 20.5 7.9 14.2 3 10l6.4-.5z"/></svg></span></a>
-    <a class="ucard reveal" href="careers.html"><div class="ucard__t"><b>Work With Us</b><span>Join the team</span></div>
-      <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6"/></svg></span></a>
-  </div>
-</section>
-
-<script src="data.js?v=7"></script>
-<script src="hummus.js?v=7"></script>
+<script src="data.js?v=8"></script>
+<script src="hummus.js?v=8"></script>
 </body>
 </html>
