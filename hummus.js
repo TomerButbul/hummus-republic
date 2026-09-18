@@ -322,7 +322,7 @@
       if (act) act.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
     locs.forEach(function (loc) {
-      var m = L.marker([loc.lat, loc.lng], { icon: hrPin(loc.status === 'open' ? '#1C392F' : '#A8634E') }).addTo(map);
+      var m = L.marker([loc.lat, loc.lng], { icon: hrPin(loc.status === 'open' ? '#271214' : '#A8634E') }).addTo(map);
       var pop = '<span class="pop-name">' + loc.city + ', ' + loc.state + '</span><span class="pop-addr">' + loc.addr + '<br>' + loc.line + '</span>' +
         (loc.status === 'open' ? '<a href="location.html?id=' + loc.slug + '">View details &rsaquo;</a>' : '<span class="pill pill--soon">Coming soon</span>');
       m.bindPopup(pop);
@@ -466,7 +466,7 @@
       var m = L.map('locdetailmap', { scrollWheelZoom: false, zoomControl: true }).setView([loc.lat, loc.lng], 14);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19 }).addTo(m);
       var solo = L.marker([loc.lat, loc.lng], {
-        icon: hrPin('#1C392F'), alt: loc.city + ', ' + loc.state
+        icon: hrPin('#271214'), alt: loc.city + ', ' + loc.state
       }).addTo(m)
         .bindPopup('<span class="pop-name">' + loc.city + ', ' + loc.state + '</span><span class="pop-addr">' + loc.addr + '</span>').openPopup();
       setTimeout(function () { m.invalidateSize(); }, 200);
