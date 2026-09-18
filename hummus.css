@@ -1043,7 +1043,9 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
 .pcard__name{font-family:var(--display);font-size:1.2rem;text-transform:uppercase;color:var(--forest)}
 .pcard__title{margin:0}
 .pcard__desc{color:var(--ink-soft);font-size:.95rem;line-height:1.5}
-.pcard__offer{font-weight:600;color:var(--clay)}
+/* --clay on cream is 4.47:1, a hair under the 4.5:1 floor for body text.
+   This darker cut is 5.14:1 and visually the same family. */
+.pcard__offer{font-weight:600;color:#9C5A46}
 .pcard__cta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:auto;padding-top:.4rem}
 .pcard__site{font-size:.88rem}
 .pcard__fine{font-size:.78rem;color:var(--ink-soft);line-height:1.45}
@@ -1115,3 +1117,9 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
 .news__empty{max-width:56ch}
 .news__empty p{margin-top:.9rem;color:var(--ink-soft);line-height:1.6}
 .news__cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}
+
+/* The store name is the control that pans the map; the card itself is no
+   longer a button, so no control contains another. Styled to look exactly as
+   the heading did. */
+.loccard__pick{all:unset;cursor:pointer;display:inline}
+.loccard__pick:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}

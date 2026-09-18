@@ -327,6 +327,15 @@
         (loc.status === 'open' ? '<a href="location.html?id=' + loc.slug + '">View details &rsaquo;</a>' : '<span class="pill pill--soon">Coming soon</span>');
       m.bindPopup(pop);
       m.on('click', function () { setActive(loc.slug); });
+      /* Leaflet gives every marker role="button" and tabindex="0" but no
+         accessible name, so a keyboard or screen-reader user meets 51
+         anonymous buttons in a row. Name each one after its store.
+         (axe: aria-command-name — WCAG 4.1.2) */
+      var mEl = m.getElement && m.getElement();
+      if (mEl) {
+        mEl.setAttribute('aria-label',
+          loc.city + ', ' + loc.state + (loc.status === 'open' ? '' : ' — coming soon'));
+      }
       markers[loc.slug] = m;
     });
 
@@ -349,13 +358,21 @@
         var lnks = loc.status === 'open'
           ? '<a href="location.html?id=' + loc.slug + '">View details</a><a href="' + gmaps(loc) + '" target="_blank" rel="noopener">Directions</a>'
           : '<a href="' + gmaps(loc) + '" target="_blank" rel="noopener">Directions</a>';
-        html += '<button class="loccard" data-slug="' + loc.slug + '"><div class="loccard__top"><h3>' + loc.city + ', ' + loc.state + '</h3>' + pill + '</div>' +
-          '<div class="loccard__addr">' + loc.addr + '<br>' + loc.line + '</div>' + hours + '<div class="loccard__links">' + lnks + '</div></button>';
+        var nm = loc.city + ', ' + loc.state;
+        html += '<div class="loccard" data-slug="' + loc.slug + '"><div class="loccard__top">' +
+          '<h3><button type="button" class="loccard__pick" data-slug="' + loc.slug + '">' + nm +
+          '<span class="vh"> — show on map</span></button></h3>' + pill + '</div>' +
+          '<div class="loccard__addr">' + loc.addr + '<br>' + loc.line + '</div>' + hours +
+          '<div class="loccard__links">' + lnks + '</div></div>';
       });
       setHTML(listEl, html || '<div class="locpanel-empty">No locations match your search. Try a city or state.</div>');
       if (countEl) countEl.textContent = shown + ' location' + (shown === 1 ? '' : 's');
       listEl.querySelectorAll('.loccard').forEach(function (c) {
         c.addEventListener('click', function (e) {
+          // Links inside the card do their own thing. The card itself is no
+          // longer focusable, so keyboard users reach the map through the
+          // name button; this handler just keeps the whole card clickable
+          // with a mouse.
           if (e.target.closest('a')) return;
           var slug = c.getAttribute('data-slug');
           var loc = locs.filter(function (l) { return l.slug === slug; })[0];
@@ -448,7 +465,9 @@
     if (window.L) {
       var m = L.map('locdetailmap', { scrollWheelZoom: false, zoomControl: true }).setView([loc.lat, loc.lng], 14);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19 }).addTo(m);
-      L.marker([loc.lat, loc.lng], { icon: hrPin('#1C392F') }).addTo(m)
+      var solo = L.marker([loc.lat, loc.lng], {
+        icon: hrPin('#1C392F'), alt: loc.city + ', ' + loc.state
+      }).addTo(m)
         .bindPopup('<span class="pop-name">' + loc.city + ', ' + loc.state + '</span><span class="pop-addr">' + loc.addr + '</span>').openPopup();
       setTimeout(function () { m.invalidateSize(); }, 200);
     }
