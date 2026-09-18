@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="hummus.css?v=17">
+<link rel="stylesheet" href="hummus.css?v=20">
 <style>
 /* rewards phone mock */
 .phone{position:relative;width:min(300px,80%);margin-inline:auto;border-radius:38px;background:var(--espresso);
@@ -41,7 +41,10 @@
 <!-- ===== HERO CAROUSEL — current offers ===== -->
 <section class="hcar" tabindex="0" aria-roledescription="carousel" aria-label="Current offers">
   <div class="hslide hslide--harissa is-active">
-    <img class="hslide__bg" src="images/harissa-chicken.jpg" alt="A Honey Harissa Chicken bowl — glazed chicken, turmeric rice, charred corn, cucumber and tomato">
+    <picture>
+      <source media="(max-width:780px)" srcset="images/banners/harissa-mobile.jpg">
+      <img class="hslide__bg" src="images/banners/harissa-desktop.jpg" alt="" width="2172" height="788" fetchpriority="high">
+    </picture>
     <div class="hslide__in">
       <span class="pill-new">New</span>
       <h2 class="h-hero">Honey harissa<br><em>chicken</em></h2>
@@ -57,7 +60,10 @@
     </div>
   </div>
   <div class="hslide">
-    <img class="hslide__bg" src="images/band-radicchio.jpg" alt="">
+    <picture>
+      <source media="(max-width:780px)" srcset="images/banners/protein-mobile.jpg">
+      <img class="hslide__bg" src="images/banners/protein-desktop.jpg" alt="" width="2172" height="788" loading="lazy">
+    </picture>
     <div class="hslide__in">
       <span class="eyebrow"><span class="dots"></span> Summer special</span>
       <h2 class="h-hero">$10 protein<br>bowls</h2>
@@ -219,8 +225,8 @@
   </div>
 </section>
 
-<script src="data.js?v=17"></script>
-<script src="data-locations.js?v=17"></script>
-<script src="hummus.js?v=17"></script>
+<script src="data.js?v=20"></script>
+<script src="data-locations.js?v=20"></script>
+<script src="hummus.js?v=20"></script>
 </body>
 </html>
