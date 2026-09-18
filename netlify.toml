@@ -62,6 +62,16 @@
   to = "/location.html?id=:slug"
   status = 200
 
+# Partner landing. QR-CRITICAL: printed codes point at
+#   /perks?p=<slug>            (members)
+#   /perks?p=<slug>&k=<code>   (employees)
+# The query string is preserved through a rewrite automatically, so the page
+# reads ?p= exactly as the printed code wrote it.
+[[redirects]]
+  from = "/perks"
+  to = "/perks.html"
+  status = 200
+
 [[redirects]]
   from = "/app"
   to = "/rewards.html"
@@ -115,7 +125,6 @@
 # Each is a live, indexed URL today. Launching without them drops the page
 # from Google and, for /perks, breaks every printed partner QR code.
 #
-#   /perks              partner landing, reads ?p=<slug>   ** QR-CRITICAL **
 #   /partners           partner index
 #   /hummus-u-plus      student campaign landing
 #   /order-now          order page (locator in order mode)
