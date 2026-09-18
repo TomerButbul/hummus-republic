@@ -15,6 +15,13 @@
 
 [build]
   publish = "."
+  # Regenerates data-locations.js from the Google Sheet on every deploy, so a
+  # sheet edit reaches the site without anyone touching code. Baked at build
+  # time rather than fetched in the browser because addresses and hours are
+  # what these 53 pages rank for, and a crawler is not guaranteed to wait for
+  # a fetch. A sheet problem prints in the build log but does not fail the
+  # deploy — a bad cell should not block an unrelated release.
+  command = "node build/locations.js"
 
 # ---------------------------------------------------------------------------
 # Live paths -> files that already exist in this repo

@@ -419,8 +419,16 @@
       return '<dt' + t + '>' + d + '</dt><dd' + t + '>' + (loc.hours[d] || 'Closed') + '</dd>';
     }).join('') : '');
 
+    /* Prefer THIS store's ordering link. The generic find-location URL makes a
+       customer who already chose a store choose it again, on a second site, on
+       a phone — the sheet carries a direct Appfront branchId link for all 37
+       open stores, so that step is avoidable. Falls back to the generic link
+       only if the sheet has none. */
+    var storeOrder = loc.orderPickup || loc.orderNow || HR.links.order;
     var orderBtns = loc.status === 'open'
-      ? '<a class="btn" href="' + HR.links.order + '" target="_blank" rel="noopener">Order Online ' + ARR + '</a><a class="btn btn--ghost" href="' + HR.links.catering + '" target="_blank" rel="noopener">Order Catering</a>'
+      ? '<a class="btn" href="' + storeOrder + '" target="_blank" rel="noopener">Order Online ' + ARR + '</a>' +
+        (loc.orderDelivery ? '<a class="btn btn--ghost" href="' + loc.orderDelivery + '" target="_blank" rel="noopener">Delivery</a>' : '') +
+        '<a class="btn btn--ghost" href="' + HR.links.catering + '" target="_blank" rel="noopener">Order Catering</a>'
       : '<span class="pill pill--soon">Coming soon</span>';
 
     if (titleEl) titleEl.textContent = loc.city + ', ' + loc.state;
