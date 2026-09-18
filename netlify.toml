@@ -153,6 +153,20 @@
 # ---------------------------------------------------------------------------
 # Headers
 # ---------------------------------------------------------------------------
+# ############################################################
+# PREVIEW GUARD — REMOVE THIS BLOCK BEFORE GOING LIVE
+# ############################################################
+# This deploy is a full copy of a site that is already live and ranking.
+# Left indexable on a *.netlify.app host it becomes a duplicate of
+# thehummusrepublic.com competing with the original, and Google may pick the
+# wrong one as canonical. noindex until this deploy IS the real domain.
+#
+# To go live: delete this header block, then redeploy.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 [[headers]]
   for = "/*"
   [headers.values]
