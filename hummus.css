@@ -52,6 +52,14 @@
   --clay-soft:#B97A65;
   --espresso:#271214;     /* SECONDARY dark — near-black warm */
 
+  /* Honey Harissa campaign — sampled straight off the campaign photography
+     rather than invented, so the UI and the food agree:
+     harissa paste #903415 · chicken glaze #973D06 · turmeric rice #E5B141 */
+  --harissa:#903415;      /* the paste in the dip bowl */
+  --harissa-ember:#973D06;/* glaze on the chicken */
+  --harissa-deep:#5E210E; /* deepened, for scrims and hovers */
+  --honey:#E5B141;        /* turmeric/honey — the warm accent */
+
   /* Working surfaces / ink */
   --paper:var(--cream);
   --ink:#241712;          /* warm near-black body text */
@@ -193,6 +201,9 @@ ul{list-style:none}
 .btn--gold{--bg:var(--gold);--fg:var(--espresso)}
 .btn--gold::before{background:var(--espresso)}
 .btn--gold:hover{color:var(--gold)}
+.btn--harissa{--bg:var(--harissa);--fg:var(--cream)}
+.btn--harissa::before{background:var(--honey)}
+.btn--harissa:hover{color:var(--harissa-deep)}
 .btn--clay{--bg:var(--clay);--fg:var(--cream)}
 .btn--clay::before{background:var(--cream)}
 .btn--clay:hover{color:var(--clay)}
@@ -421,6 +432,41 @@ ul{list-style:none}
 .hslide.is-active .eyebrow{transition-delay:.22s}
 .hslide.is-active .hslide__lede{transition-delay:.44s}
 .hslide.is-active .hslide__cta{transition-delay:.56s}
+/* ---- Honey Harissa slide -------------------------------------------------
+   The stock scrim is cooled toward forest green, which fights this photo's
+   warm slate. This one is warmed toward ember and adds a low glow behind the
+   copy so the type holds without darkening the food. */
+.hslide--harissa::after{
+  background:
+    linear-gradient(180deg,rgba(38,14,8,.46) 0%,rgba(38,14,8,.05) 26%,
+                    rgba(46,17,9,.24) 56%,rgba(28,9,5,.84) 100%),
+    radial-gradient(120% 92% at 10% 80%,rgba(144,52,21,.40) 0%,rgba(144,52,21,0) 62%)}
+/* This photo has its dark ground on the LEFT and the bowl from ~45% across,
+   so the headline is held narrower than the generic hero: at full hero scale
+   it ran over the cucumber and chicken. Capped by ch so it reflows with the
+   type, not with a magic pixel width. */
+.hslide--harissa h2{font-size:clamp(2.8rem,7.2vw,6.6rem);max-width:11ch}
+.hslide--harissa .hslide__lede{max-width:34ch}
+.hslide--harissa .eyebrow{color:var(--honey)}
+.hslide--harissa h2 em{color:var(--honey)}
+
+/* the campaign's outlined NEW pill */
+.pill-new{display:inline-flex;align-items:center;justify-content:center;
+  padding:.4em 1.1em;border:2px solid var(--cream);border-radius:999px;
+  font-family:var(--body);font-weight:700;font-size:.68rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--cream)}
+
+/* SWEET | SMOKY | A LITTLE SPICY */
+.hslide__notes{display:flex;align-items:center;flex-wrap:wrap;gap:1.15rem;
+  margin:1.05rem 0 0;padding:0;list-style:none;
+  font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.17em;
+  text-transform:uppercase;color:rgba(254,251,250,.88)}
+.hslide__notes li{display:flex;align-items:center;gap:1.15rem}
+.hslide__notes li+li::before{content:"";display:block;width:1px;height:1.05em;
+  background:rgba(254,251,250,.38)}
+@media (max-width:520px){.hslide__notes{font-size:.72rem;gap:.8rem}
+  .hslide__notes li{gap:.8rem}}
+
 .hcar__dots{position:absolute;z-index:5;left:50%;bottom:clamp(1.3rem,4vh,2.2rem);transform:translateX(-50%);display:flex;gap:.5rem}
 .hcar__dots button{width:30px;height:4px;border-radius:3px;border:0;padding:0;background:rgba(254,251,250,.4);cursor:pointer;transition:.4s var(--ease)}
 .hcar__dots button.on{background:var(--gold);width:46px}
