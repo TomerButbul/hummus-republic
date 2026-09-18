@@ -80,6 +80,11 @@
   status = 200
 
 [[redirects]]
+  from = "/partners"
+  to = "/partners.html"
+  status = 200
+
+[[redirects]]
   from = "/app"
   to = "/rewards.html"
   status = 200
@@ -132,7 +137,6 @@
 # Each is a live, indexed URL today. Launching without them drops the page
 # from Google and, for /perks, breaks every printed partner QR code.
 #
-#   /partners           partner index
 #   /hummus-u-plus      student campaign landing
 #   /order-now          order page (locator in order mode)
 #   /news-media         press page

@@ -1023,3 +1023,27 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
 .perk__fallback{padding-block:clamp(2.4rem,7vh,4rem);text-align:center}
 .perk__cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.4rem}
 .perk__noscript{padding-block:3rem}
+
+/* ---- /partners directory ---------------------------------- */
+.partners{padding-block:clamp(2.6rem,7vh,4.4rem)}
+.partners__grid{list-style:none;padding:0;margin:0;display:grid;gap:clamp(1rem,2.4vw,1.6rem);
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
+.partners__empty{color:var(--ink-soft)}
+.pcard{display:flex;flex-direction:column;gap:.75rem;padding:clamp(1.3rem,2.6vw,1.7rem);
+  border:1px solid var(--line);border-radius:18px;background:var(--cream)}
+.pcard__logo{display:flex;align-items:center;justify-content:flex-start;height:52px}
+.pcard__logo--plate{background:var(--sand);border-radius:10px;padding:.5rem .75rem;align-self:flex-start}
+/* "Logo Plate = none" is authored for the dark /perks hero, where light
+   artwork reads fine unplated. These cards are cream, so the same artwork
+   disappears — Studio Pilates vanished completely. Give the unplated flavour
+   a dark chip HERE rather than changing the sheet, because the sheet's value
+   is correct for the page it was written for. */
+.pcard__logo--bare{background:var(--forest);border-radius:10px;padding:.55rem .8rem;align-self:flex-start}
+.pcard__logo img{height:100%;width:auto;max-width:190px;object-fit:contain;display:block}
+.pcard__name{font-family:var(--display);font-size:1.2rem;text-transform:uppercase;color:var(--forest)}
+.pcard__title{margin:0}
+.pcard__desc{color:var(--ink-soft);font-size:.95rem;line-height:1.5}
+.pcard__offer{font-weight:600;color:var(--clay)}
+.pcard__cta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:auto;padding-top:.4rem}
+.pcard__site{font-size:.88rem}
+.pcard__fine{font-size:.78rem;color:var(--ink-soft);line-height:1.45}

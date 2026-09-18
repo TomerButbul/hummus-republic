@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Partners | Hummus Republic</title>
+<meta name="description" content="Hummus Republic partners with gyms and studios to give their members and staff exclusive perks. See who's on the list.">
+<link rel="canonical" href="https://thehummusrepublic.com/partners">
+<link rel="icon" href="images/hr-mark.svg">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hummus.css?v=12">
+</head>
+<body data-page="partners">
+<a class="skip" href="#partners-main">Skip to content</a>
+
+<header class="phead phead--forest grain">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Partners</span>
+    <h1 class="h-1 reveal" style="--d:60ms">Partners</h1>
+    <p class="lede reveal" style="--d:140ms">We team up with gyms and studios so their members eat better after training. Scan the code at your club to claim your offer.</p>
+  </div>
+</header>
+
+<main id="partners-main" class="wrap partners" aria-busy="true">
+  <div id="partners-state" class="perk__state" role="status" aria-live="polite">
+    <div class="perk__spinner" aria-hidden="true"></div>
+    <p class="perk__loading">Loading partners…</p>
+  </div>
+  <ul id="partners-grid" class="partners__grid" hidden></ul>
+</main>
+
+<script src="data.js?v=12"></script>
+<script src="sheets.js?v=12"></script>
+<script src="hummus.js?v=12"></script>
+<script src="partners.js?v=12"></script>
+</body>
+</html>
