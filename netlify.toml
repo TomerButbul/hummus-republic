@@ -153,6 +153,28 @@
 # ---------------------------------------------------------------------------
 # Headers
 # ---------------------------------------------------------------------------
+# Working directories live alongside the site because publish = ".", and the
+# CLI uploads the folder rather than what git tracks. None of these should be
+# reachable over HTTP: /build is the generators, /.claude is editor config,
+# /.playwright-mcp is console logs from local debugging.
+[[redirects]]
+  from = "/build/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.claude/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.playwright-mcp/*"
+  to = "/"
+  status = 404
+  force = true
+
 # ############################################################
 # PREVIEW GUARD — REMOVE THIS BLOCK BEFORE GOING LIVE
 # ############################################################
