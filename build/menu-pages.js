@@ -103,7 +103,7 @@ function page(item, prev, next) {
 <main id="item-main" class="mitem">
   <div class="wrap mitem__grid">
     <div class="mitem__media">
-      <img src="../${esc(item.img)}" alt="${esc(item.name)} at Hummus Republic" width="900" height="900" loading="eager">
+      <img src="../${esc(item.img)}" alt="${esc(item.alt || item.name + ' at Hummus Republic')}" width="900" height="900" loading="eager">
     </div>
     <div class="mitem__body">
       <nav class="crumb mitem__crumb" aria-label="Breadcrumb">

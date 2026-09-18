@@ -1068,3 +1068,11 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
 .mitem__pagelink{font-family:var(--body);font-weight:600;color:var(--forest);text-decoration:none}
 .mitem__pagelink:hover{color:var(--clay)}
 .mitem__pagelink--next{margin-left:auto;text-align:right}
+
+/* The product shots are cutouts EXCEPT fountain-drink and lemonade: a
+   transparent cup cannot be keyed out (the backdrop shows THROUGH the drink),
+   so those two were recoloured onto a flat #FFF9EA instead. The media box
+   uses that same value so the two opaque ones do not show a visible rectangle
+   against a different cream. */
+:root{--photo-plate:#FFF9EA}
+.mitem__media{background:var(--photo-plate)}
