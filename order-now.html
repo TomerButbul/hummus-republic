@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Order Now | Hummus Republic</title>
+<meta name="description" content="Order Hummus Republic for pickup or delivery. Pick your store and go straight to its menu — bowls, pitas, wraps and fresh house-made hummus.">
+<link rel="canonical" href="https://thehummusrepublic.com/order-now">
+<link rel="icon" href="images/hr-mark.svg">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600,700&f%5B%5D=clash-display@600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hummus.css?v=15">
+</head>
+<body data-page="order">
+<a class="skip" href="#order-main">Skip to content</a>
+
+<header class="phead phead--forest grain">
+  <div class="wrap">
+    <span class="crumb phead__crumb reveal"><a href="index.html">Home</a> &rsaquo; Order</span>
+    <h1 class="h-1 reveal" style="--d:60ms">Order now</h1>
+    <p class="lede reveal" style="--d:140ms;max-width:44ch">Pick your store and we'll take you straight to its menu — pickup or delivery.</p>
+  </div>
+</header>
+
+<main id="order-main" class="orderpage">
+  <div class="wrap">
+    <div class="ordersearch">
+      <label class="ordersearch__label" for="ordersearch">Find your store</label>
+      <div class="locsearch__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="ordersearch" type="search" placeholder="City, state or ZIP" autocomplete="off">
+      </div>
+      <p class="ordersearch__count" id="ordercount" role="status" aria-live="polite"></p>
+    </div>
+    <ul class="ordergrid" id="ordergrid"></ul>
+    <p class="orderpage__note">Not seeing your store? <a class="textlink" href="locations.html">Browse every location</a>,
+      or <a class="textlink" href="https://www.catering.thehummusrepublic.com/" target="_blank" rel="noopener">order catering</a>.</p>
+  </div>
+</main>
+
+<script src="data.js?v=15"></script>
+<script src="data-locations.js?v=15"></script>
+<script src="hummus.js?v=15"></script>
+<script src="order-now.js?v=15"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Source: Google Sheet 1GyGj5DXqfvAi4qfCeLlEoIZGhx0Cm2BJR9mxKaPzGuE (first tab)
    Regenerate: node build/locations.js
-   Built: 2026-09-18T18:32:37.702Z
+   Built: 2026-09-18T18:55:30.680Z
    51 locations — 37 open, 14 coming soon,
    37 with a direct ordering link. */
 (function () {

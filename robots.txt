@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Partner landing pages are reached by QR code with a ?p= slug. The bare page
+# is indexable; the query-string variants are the same page and would look
+# like duplicates.
+Disallow: /perks?
+
+Sitemap: https://thehummusrepublic.com/sitemap.xml

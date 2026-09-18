@@ -1076,3 +1076,42 @@ body.cursor-on,body.cursor-on a,body.cursor-on button{cursor:none}
    against a different cream. */
 :root{--photo-plate:#FFF9EA}
 .mitem__media{background:var(--photo-plate)}
+
+/* ---- visually hidden: readable by a screen reader, invisible on screen.
+   Used to give repeated "Pickup"/"Delivery" links a unique accessible name,
+   so a screen-reader user listing links hears 37 distinct destinations
+   instead of "Pickup" thirty-seven times. (WCAG 2.4.4) ---- */
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* ---- /order-now ------------------------------------------- */
+.orderpage{padding-block:clamp(2.2rem,6vh,3.6rem) clamp(3rem,8vh,5rem)}
+.ordersearch{max-width:520px;margin-bottom:clamp(1.6rem,4vh,2.4rem)}
+.ordersearch__label{display:block;font-family:var(--body);font-weight:600;
+  font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:.55rem}
+.ordersearch__count{margin-top:.6rem;font-size:.88rem;color:var(--ink-soft)}
+.ordergrid{list-style:none;padding:0;margin:0;display:grid;gap:clamp(.9rem,2vw,1.3rem);
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
+.ordergrid__empty{color:var(--ink-soft)}
+.ocard{display:flex;flex-direction:column;gap:.5rem;padding:clamp(1.1rem,2.4vw,1.45rem);
+  border:1px solid var(--line);border-radius:16px;background:var(--cream)}
+.ocard__name{font-family:var(--display);font-size:1.15rem;text-transform:uppercase;
+  letter-spacing:.01em;color:var(--forest);margin:0}
+.ocard__addr{font-size:.9rem;color:var(--ink-soft);line-height:1.45}
+.ocard__cta{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+.ocard__detail{font-size:.85rem;margin-top:.2rem}
+.orderpage__note{margin-top:clamp(1.8rem,4vh,2.6rem);color:var(--ink-soft);font-size:.92rem}
+
+/* ---- /hummus-u-plus + /news-media -------------------------- */
+.hu__eligibility{margin-top:1rem;font-family:var(--body);font-weight:600;font-size:.82rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.hu{padding-block:clamp(2.4rem,7vh,4rem)}
+.hu__join{max-width:56ch}
+.hu__lede{margin-top:.9rem;color:var(--ink-soft);line-height:1.6}
+.hu__cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}
+.hu__fine{margin-top:1.4rem;font-size:.82rem;line-height:1.5;color:var(--ink-soft);max-width:52ch}
+.news{padding-block:clamp(2.4rem,7vh,4rem)}
+.news__empty{max-width:56ch}
+.news__empty p{margin-top:.9rem;color:var(--ink-soft);line-height:1.6}
+.news__cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}

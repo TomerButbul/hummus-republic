@@ -21,7 +21,7 @@
   # what these 53 pages rank for, and a crawler is not guaranteed to wait for
   # a fetch. A sheet problem prints in the build log but does not fail the
   # deploy — a bad cell should not block an unrelated release.
-  command = "node build/locations.js && node build/menu-pages.js"
+  command = "node build/locations.js && node build/menu-pages.js && node build/seo.js"
 
 # ---------------------------------------------------------------------------
 # Live paths -> files that already exist in this repo
@@ -72,6 +72,34 @@
 # 55 location pages. The rewrite hands the slug through as ?id= so
 # location.html reads it exactly as it does today, while the visitor and
 # Google both keep /locations/<slug>.
+# Stores that are gone but whose pages are still live and indexed today.
+# Checked against the sheet: burbank-ca and surprise-az are not in it at all,
+# roswell-ga and tampa-fl are Status = Closed. All four currently send
+# customers to shut doors.
+#
+# 301 rather than 404: these URLs have inbound links and ranking history, and
+# a permanent redirect passes that to the locator while putting a real person
+# one click from a store that is actually open. A 404 throws both away.
+[[redirects]]
+  from = "/locations/burbank-ca"
+  to = "/locations-main"
+  status = 301
+
+[[redirects]]
+  from = "/locations/surprise-az"
+  to = "/locations-main"
+  status = 301
+
+[[redirects]]
+  from = "/locations/roswell-ga"
+  to = "/locations-main"
+  status = 301
+
+[[redirects]]
+  from = "/locations/tampa-fl"
+  to = "/locations-main"
+  status = 301
+
 [[redirects]]
   from = "/locations/:slug"
   to = "/location.html?id=:slug"
@@ -82,6 +110,21 @@
 #   /perks?p=<slug>&k=<code>   (employees)
 # The query string is preserved through a rewrite automatically, so the page
 # reads ?p= exactly as the printed code wrote it.
+[[redirects]]
+  from = "/hummus-u-plus"
+  to = "/hummus-u-plus.html"
+  status = 200
+
+[[redirects]]
+  from = "/news-media"
+  to = "/news-media.html"
+  status = 200
+
+[[redirects]]
+  from = "/order-now"
+  to = "/order-now.html"
+  status = 200
+
 [[redirects]]
   from = "/perks"
   to = "/perks.html"
@@ -145,9 +188,6 @@
 # Each is a live, indexed URL today. Launching without them drops the page
 # from Google and, for /perks, breaks every printed partner QR code.
 #
-#   /hummus-u-plus      student campaign landing
-#   /order-now          order page (locator in order mode)
-#   /news-media         press page
 #
 # There is deliberately no catch-all 404 rewrite here: a wrong guess would
 # return 200 for a URL that should 404, and Google treats that as a soft-404

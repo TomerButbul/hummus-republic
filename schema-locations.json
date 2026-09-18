@@ -1,0 +1,2310 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/scottsdale-az",
+      "name": "Hummus Republic — Scottsdale, AZ",
+      "url": "https://thehummusrepublic.com/locations/scottsdale-az",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(480) 550-5995",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "16211 North Scottsdale Road ste a5",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "postalCode": "85254",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.634301,
+        "longitude": -111.924176
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6760906590192c151abf089f&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/isla-vista-ca",
+      "name": "Hummus Republic — Goleta, CA",
+      "url": "https://thehummusrepublic.com/locations/isla-vista-ca",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(805) 770-8827",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6546 Pardall Rd",
+        "addressLocality": "Goleta",
+        "addressRegion": "CA",
+        "postalCode": "93117",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.413299,
+        "longitude": -119.855981
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-10:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=676093057ed4d33aae567626&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/livermore-ca",
+      "name": "Hummus Republic — Livermore, CA",
+      "url": "https://thehummusrepublic.com/locations/livermore-ca",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(925) 667-4026",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3032 W Jack London Blvd",
+        "addressLocality": "Livermore",
+        "addressRegion": "CA",
+        "postalCode": "94551",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.696737,
+        "longitude": -121.844682
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67609348c70eec32bed3af62&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/turlock-ca",
+      "name": "Hummus Republic — Turlock, CA",
+      "url": "https://thehummusrepublic.com/locations/turlock-ca",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(209) 480-9984",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1207 W Monte Vista Ave",
+        "addressLocality": "Turlock",
+        "addressRegion": "CA",
+        "postalCode": "95382",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.522272,
+        "longitude": -120.863688
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-3:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e421ed512ff4266d29dd8d&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/valencia-ca",
+      "name": "Hummus Republic — Valencia, CA",
+      "url": "https://thehummusrepublic.com/locations/valencia-ca",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(661) 753-3757",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "28108 Newhall Ranch Rd",
+        "addressLocality": "Valencia",
+        "addressRegion": "CA",
+        "postalCode": "91355",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.4428,
+        "longitude": -118.57364
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a03a9267ffa590c8a5a2ab8&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/ventura-ca",
+      "name": "Hummus Republic — Ventura, CA",
+      "url": "https://thehummusrepublic.com/locations/ventura-ca",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(805) 350-5513",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4960 Telephone Road unit 105",
+        "addressLocality": "Ventura",
+        "addressRegion": "CA",
+        "postalCode": "93003",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.263117,
+        "longitude": -119.22568
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:45 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:45 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:45 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:45 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:45 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:45 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:45 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6706cf9e24c68051fa8415ce&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/louisville-co",
+      "name": "Hummus Republic — , CO",
+      "url": "https://thehummusrepublic.com/locations/louisville-co",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(303) 697-6471",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "321 McCaslin Blvd, Louisville, CO 80027",
+        "addressLocality": "",
+        "addressRegion": "CO",
+        "postalCode": "",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a2b140dd6c1be0c982ae712&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/wesley-chapel-fl",
+      "name": "Hummus Republic — Wesley Chapel, FL",
+      "url": "https://thehummusrepublic.com/locations/wesley-chapel-fl",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(813) 388-2998",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26962 Halter Loop",
+        "addressLocality": "Wesley Chapel",
+        "addressRegion": "FL",
+        "postalCode": "33544",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.2163,
+        "longitude": -82.3486
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69dff2eabbc6310c85b9b46d&branchName=Wesley%20Chapel%2C%20FL&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/springfield-il",
+      "name": "Hummus Republic — Springfield, IL",
+      "url": "https://thehummusrepublic.com/locations/springfield-il",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(217) 280-5253",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1322 Wabash Ave",
+        "addressLocality": "Springfield",
+        "addressRegion": "IL",
+        "postalCode": "62704",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.76407,
+        "longitude": -89.69672
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-9:00PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a0f4f72f54f360ca160ed49&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/avon-in",
+      "name": "Hummus Republic — Avon, IN",
+      "url": "https://thehummusrepublic.com/locations/avon-in",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(317) 727-1060",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "114 North Avon Avenue",
+        "addressLocality": "Avon",
+        "addressRegion": "IN",
+        "postalCode": "46123",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.764549,
+        "longitude": -86.400636
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e41e938a1c7a0755c8c1b9&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/fort-wayne-in",
+      "name": "Hummus Republic — Fort Wayne, IN",
+      "url": "https://thehummusrepublic.com/locations/fort-wayne-in",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(260) 220-2075",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1034 S Thomas Rd, Ste 117",
+        "addressLocality": "Fort Wayne",
+        "addressRegion": "IN",
+        "postalCode": "46804",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.07733,
+        "longitude": -85.20348
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6848759791fcf76738a3408a&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/whitestown-in",
+      "name": "Hummus Republic — Whitestown, IN",
+      "url": "https://thehummusrepublic.com/locations/whitestown-in",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(317) 768-1030",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6338 Mills Dr #200",
+        "addressLocality": "Whitestown",
+        "addressRegion": "IN",
+        "postalCode": "46075",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.95077,
+        "longitude": -86.34811
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e420afeeccdd6074ade103&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/belair-md",
+      "name": "Hummus Republic — Bel Air, MD",
+      "url": "https://thehummusrepublic.com/locations/belair-md",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(443) 987-1003",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5 Bel Air S Pkwy Suite 1639",
+        "addressLocality": "Bel Air",
+        "addressRegion": "MD",
+        "postalCode": "21015",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.79165,
+        "longitude": -76.27295
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30 AM-8:45 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-8:45 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-8:45 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-8:45 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-8:45 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-8:45 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69119b4a80354861ae5110f7&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/owings-mills-md",
+      "name": "Hummus Republic — Owings Mills, MD",
+      "url": "https://thehummusrepublic.com/locations/owings-mills-md",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(443) 732-5132",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10490 Owings Mills Blvd suite 108",
+        "addressLocality": "Owings Mills",
+        "addressRegion": "MD",
+        "postalCode": "21117",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.4217,
+        "longitude": -76.778659
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-10:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=682f73536c8ab14e40f97441&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/ann-arbor-mi",
+      "name": "Hummus Republic — Ann Arbor, MI",
+      "url": "https://thehummusrepublic.com/locations/ann-arbor-mi",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "407 E Liberty St",
+        "addressLocality": "Ann Arbor",
+        "addressRegion": "MI",
+        "postalCode": "48104",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.2798,
+        "longitude": -83.7441
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-8:00PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a0f4e5d2c76af0c862dbc26&branchName=Ann%20Arbor%2C%20MI&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/high-point-nc",
+      "name": "Hummus Republic — High Point, NC",
+      "url": "https://thehummusrepublic.com/locations/high-point-nc",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(336) 307-3976",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1589 Skeet Club Road",
+        "addressLocality": "High Point",
+        "addressRegion": "NC",
+        "postalCode": "27265",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.0726,
+        "longitude": -80.0052
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00AM-9:00PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69fa2e640878e30ca4da377a&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/concord-nc",
+      "name": "Hummus Republic — Concord, NC",
+      "url": "https://thehummusrepublic.com/locations/concord-nc",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(704) 956-2005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3805 Concord Pkwy S suite 140",
+        "addressLocality": "Concord",
+        "addressRegion": "NC",
+        "postalCode": "28027",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.367652,
+        "longitude": -80.665405
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=680be79e5779d46aeebea4f5&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/garner-nc",
+      "name": "Hummus Republic — Garner, NC",
+      "url": "https://thehummusrepublic.com/locations/garner-nc",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(919) 594-1874",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "53 Cabela Dr",
+        "addressLocality": "Garner",
+        "addressRegion": "NC",
+        "postalCode": "27529",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.69878,
+        "longitude": -78.58553
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:30 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69119ae655e62ddef1efe1a2&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/jacksonville-nc",
+      "name": "Hummus Republic — Jacksonville, NC",
+      "url": "https://thehummusrepublic.com/locations/jacksonville-nc",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(910) 333-0408",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3040 Western Boulevard suite 200",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "NC",
+        "postalCode": "28546",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.79493,
+        "longitude": -77.40862
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=676092cbd08d9f4000dcb2b2&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/woodbridge-nj",
+      "name": "Hummus Republic — Avenel, NJ",
+      "url": "https://thehummusrepublic.com/locations/woodbridge-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(732) 725-7151",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "990 Saint Georges Avenue",
+        "addressLocality": "Avenel",
+        "addressRegion": "NJ",
+        "postalCode": "07001",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.5834,
+        "longitude": -74.2825
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00:00 AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00:00 AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00:00 AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00:00 AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00:00 AM-9:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00:00 AM-9:00PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69cd860c41c7350c625b778d&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/edison-nj",
+      "name": "Hummus Republic — Edison, NJ",
+      "url": "https://thehummusrepublic.com/locations/edison-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(848) 260-0364",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2680 Woodbridge Ave",
+        "addressLocality": "Edison",
+        "addressRegion": "NJ",
+        "postalCode": "08837",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.511298,
+        "longitude": -74.363962
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-0.916666666666667"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-10:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=676090817ed4d33aae566ea2&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/jersey-city-nj",
+      "name": "Hummus Republic — Jersey City, NJ",
+      "url": "https://thehummusrepublic.com/locations/jersey-city-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(201) 721-5852",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Journal Square Plaza",
+        "addressLocality": "Jersey City",
+        "addressRegion": "NJ",
+        "postalCode": "07306",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.733841,
+        "longitude": -74.063871
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-12:00 AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-12:00 AM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=676093dcc70eec32bed3b135&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/long-branch-nj",
+      "name": "Hummus Republic — Long Branch, NJ",
+      "url": "https://thehummusrepublic.com/locations/long-branch-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(732) 204-7177",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "84 Ocean Avenue North",
+        "addressLocality": "Long Branch",
+        "addressRegion": "NJ",
+        "postalCode": "07740",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.301001,
+        "longitude": -73.978888
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67b65695029c0053a688d055&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/montclair-nj",
+      "name": "Hummus Republic — Montclair, NJ",
+      "url": "https://thehummusrepublic.com/locations/montclair-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(973) 400-0640",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "412 Bloomfield Ave",
+        "addressLocality": "Montclair",
+        "addressRegion": "NJ",
+        "postalCode": "07042",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.8129,
+        "longitude": -74.2178
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-10:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69d845b4bd407a0ca0bb5bec&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/north-brunswick-nj",
+      "name": "Hummus Republic — North Brunswick Township, NJ",
+      "url": "https://thehummusrepublic.com/locations/north-brunswick-nj",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(732) 305-6054",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "758 Shoppes Blvd #11",
+        "addressLocality": "North Brunswick Township",
+        "addressRegion": "NJ",
+        "postalCode": "08902",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.46097,
+        "longitude": -74.45616
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-10:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-10:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67609217aea60a0479c9c4b4&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/manhattan-ny",
+      "name": "Hummus Republic — New York, NY",
+      "url": "https://thehummusrepublic.com/locations/manhattan-ny",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(917)-580-0259",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "110 Maiden Ln",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10005",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7067,
+        "longitude": -74.0075
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-12:00AM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-12:00AM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a0f50abf54f360ca160f76b&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/avon-oh",
+      "name": "Hummus Republic — Avon, OH",
+      "url": "https://thehummusrepublic.com/locations/avon-oh",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(440) 695-0370",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "33420 Just Imagine Dr",
+        "addressLocality": "Avon",
+        "addressRegion": "OH",
+        "postalCode": "44011",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.467864,
+        "longitude": -81.987455
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e41ed2528a2a71a6142ec5&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/cincinnati-oh",
+      "name": "Hummus Republic — Cincinnati, OH",
+      "url": "https://thehummusrepublic.com/locations/cincinnati-oh",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(317) 727-1060",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "257 Calhoun St",
+        "addressLocality": "Cincinnati",
+        "addressRegion": "OH",
+        "postalCode": "45219",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.128265,
+        "longitude": -84.517708
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e41f13528a2a71a6142ff5&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/delaware-oh",
+      "name": "Hummus Republic — Delaware, OH",
+      "url": "https://thehummusrepublic.com/locations/delaware-oh",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(740) 471-4432",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1710 Columbus Pike #216",
+        "addressLocality": "Delaware",
+        "addressRegion": "OH",
+        "postalCode": "43015",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.26829,
+        "longitude": -83.06803
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=68af155c2d33372fb95f13ad&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/clarksville-tn",
+      "name": "Hummus Republic — Clarksville, TN",
+      "url": "https://thehummusrepublic.com/locations/clarksville-tn",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(931) 378-5257",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "108 Morris Rd #101",
+        "addressLocality": "Clarksville",
+        "addressRegion": "TN",
+        "postalCode": "37040",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.59226216,
+        "longitude": -87.28856319
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=68dedcc393c3ba0c904cd205&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/gallatin-tn",
+      "name": "Hummus Republic — Gallatin, TN",
+      "url": "https://thehummusrepublic.com/locations/gallatin-tn",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(615) 675-5887",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1680 Nashville Pike",
+        "addressLocality": "Gallatin",
+        "addressRegion": "TN",
+        "postalCode": "37066",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.35544,
+        "longitude": -86.50602
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69119c4bba521dbf406123b8&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/knoxville-tn",
+      "name": "Hummus Republic — Knoxville, TN",
+      "url": "https://thehummusrepublic.com/locations/knoxville-tn",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(865) 358-6000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4885 N Broadway St",
+        "addressLocality": "Knoxville",
+        "addressRegion": "TN",
+        "postalCode": "37918",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.027906,
+        "longitude": -83.928679
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "9:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "9:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "9:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "9:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "9:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "9:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=685adeb778fe2ac9db4833b0&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/memphis-tn",
+      "name": "Hummus Republic — Cordova, TN",
+      "url": "https://thehummusrepublic.com/locations/memphis-tn",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(901) 779-3195",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "750 N Germantown Pkwy STE 105",
+        "addressLocality": "Cordova",
+        "addressRegion": "TN",
+        "postalCode": "38018",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.14548,
+        "longitude": -89.794677
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67d4797b01dabb51d03ba1de&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/frisco-tx",
+      "name": "Hummus Republic — Frisco, TX",
+      "url": "https://thehummusrepublic.com/locations/frisco-tx",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(214) 407-7797",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3311 Preston Rd #7",
+        "addressLocality": "Frisco",
+        "addressRegion": "TX",
+        "postalCode": "75034",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.10684,
+        "longitude": -96.80753
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-7:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=67e41f4d8a1c7a0755c8c501&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/bellevue-wa",
+      "name": "Hummus Republic — Bellevue, WA",
+      "url": "https://thehummusrepublic.com/locations/bellevue-wa",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(425) 429-6350",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11022 NE 8th St",
+        "addressLocality": "Bellevue",
+        "addressRegion": "WA",
+        "postalCode": "98004",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.617646,
+        "longitude": -122.193027
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69fe39850dff1f0c841ee77c&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/wauwatosa-wi",
+      "name": "Hummus Republic — Wauwatosa, WI",
+      "url": "https://thehummusrepublic.com/locations/wauwatosa-wi",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(414) 249-3165",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "860 N Mayfair Rd",
+        "addressLocality": "Wauwatosa",
+        "addressRegion": "WI",
+        "postalCode": "53226",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.0402,
+        "longitude": -88.0483
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "10:30AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "10:30 AM-9:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "10:30 AM-9:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=6a0f4f02f54f360ca160e8e0&branchName=Wauwatosa%2C%20WI&servingOptionType=pickup"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://thehummusrepublic.com/locations/loganville-ga",
+      "name": "Hummus Republic — Loganville, GA",
+      "url": "https://thehummusrepublic.com/locations/loganville-ga",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "telephone": "(470) 448-1994",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4743 Atlanta Hwy",
+        "addressLocality": "Loganville",
+        "addressRegion": "GA",
+        "postalCode": "30052",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.831235,
+        "longitude": -83.872841
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "description": "11:00 AM-8:00PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "description": "11:00 AM-8:00 PM"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Saturday",
+          "description": "11:00 AM-8:00 PM"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://order.thehummusrepublic.com/order/?branchId=69dfef56e102c70c5edaeee3&branchName=Loganville%2C%20GA%20&servingOptionType=pickup"
+      }
+    }
+  ]
+}
