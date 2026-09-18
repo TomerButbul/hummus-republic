@@ -21,7 +21,7 @@
   # what these 53 pages rank for, and a crawler is not guaranteed to wait for
   # a fetch. A sheet problem prints in the build log but does not fail the
   # deploy — a bad cell should not block an unrelated release.
-  command = "node build/locations.js"
+  command = "node build/locations.js && node build/menu-pages.js"
 
 # ---------------------------------------------------------------------------
 # Live paths -> files that already exist in this repo
@@ -54,6 +54,14 @@
 [[redirects]]
   from = "/hummus-republic-menu"
   to = "/menu.html"
+  status = 200
+
+# 19 indexed menu item pages, each generated as its own static file so it has
+# its own title, description and H1. A single template reading a query string
+# would give nineteen dishes one set of metadata and Google would rank none.
+[[redirects]]
+  from = "/hummus-republic-menu/:slug"
+  to = "/menu/:slug.html"
   status = 200
 
 [[redirects]]
@@ -140,7 +148,6 @@
 #   /hummus-u-plus      student campaign landing
 #   /order-now          order page (locator in order mode)
 #   /news-media         press page
-#   /hummus-republic-menu/<item>   19 indexed item pages
 #
 # There is deliberately no catch-all 404 rewrite here: a wrong guess would
 # return 200 for a URL that should 404, and Google treats that as a soft-404
