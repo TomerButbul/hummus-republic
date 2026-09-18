@@ -1,19 +1,128 @@
 # Hummus Republic — static site (no build step)
+#
+# URL CONTRACT
+# ------------
+# Printed QR codes, Google's index and inbound links all point at the paths the
+# Framer site publishes. Those paths are the contract; the filenames behind them
+# are an implementation detail. Every mapping below is a REWRITE (status 200),
+# not a redirect: the browser keeps the canonical URL, Google keeps the ranking
+# signal on one URL, and a scanned code never takes a hop it could fail on.
+#
+# The live path inventory (91 URLs, read from thehummusrepublic.com/sitemap.xml)
+# is the source of truth. Anything in it that is NOT covered here is listed at
+# the bottom as still-missing — those are real indexed pages and shipping
+# without them would drop them from the index.
+
 [build]
   publish = "."
 
+# ---------------------------------------------------------------------------
+# Live paths -> files that already exist in this repo
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/about-us"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/accessibility-statement"
+  to = "/accessibility.html"
+  status = 200
+
+[[redirects]]
+  from = "/careers"
+  to = "/careers.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact-us"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/franchise-opportunities"
+  to = "/franchise.html"
+  status = 200
+
+[[redirects]]
+  from = "/hummus-republic-menu"
+  to = "/menu.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations-main"
+  to = "/locations.html"
+  status = 200
+
+# 55 location pages. The rewrite hands the slug through as ?id= so
+# location.html reads it exactly as it does today, while the visitor and
+# Google both keep /locations/<slug>.
+[[redirects]]
+  from = "/locations/:slug"
+  to = "/location.html?id=:slug"
+  status = 200
+
+[[redirects]]
+  from = "/app"
+  to = "/rewards.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacynotice"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/termsofservice"
+  to = "/terms.html"
+  status = 200
+
+# ---------------------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------------------
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
 
+# The stylesheet and scripts are referenced without a content hash, so they
+# cannot be immutable for a year — a deploy would not reach anyone who had
+# visited before. Revalidation keeps deploys effective and stays cheap.
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.js"
   [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ---------------------------------------------------------------------------
+# STILL MISSING — do NOT go live until these exist.
+# Each is a live, indexed URL today. Launching without them drops the page
+# from Google and, for /perks, breaks every printed partner QR code.
+#
+#   /perks              partner landing, reads ?p=<slug>   ** QR-CRITICAL **
+#   /partners           partner index
+#   /hummus-u-plus      student campaign landing
+#   /order-now          order page (locator in order mode)
+#   /news-media         press page
+#   /hummus-republic-menu/<item>   19 indexed item pages
+#
+# There is deliberately no catch-all 404 rewrite here: a wrong guess would
+# return 200 for a URL that should 404, and Google treats that as a soft-404
+# across the whole site.
+# ---------------------------------------------------------------------------
